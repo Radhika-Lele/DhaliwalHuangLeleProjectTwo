@@ -1,0 +1,220 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Contact</title>
+    </head>
+    <body>
+    <!-- Navigation Bar -->
+    <div class="wrapperOne">
+        <div class="logo">
+            <img src="./project-1-store-novas/novas-project/assets/logo-black.png" alt="novas logo">
+        </div>
+        <!-- <input id="menuButton" type="checkbox"/>
+        <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./project-1-store-novas/novas-project/assets/icons/hamburger.png" alt="Navigation Menu"></label> -->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <div class="cartIcon">
+            <img src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
+                alt="shopping cart"><sup class="cartIconSup">2</sup>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header  class="contactHeader">
+            <div>
+            <h1>Contact Us</h1>
+            </div>
+    </header>
+
+    <!-- Section First -->
+        <div class="container">
+            <div id="error"></div>
+            <form action="/" method="GET">
+        
+            <label for="fname"></label>
+            <input type="text" id="fname" name="name" placeholder="Your name.." required>
+            
+            <div class="error-hint hidden">Your name is required.</div>
+
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Your e-mail">
+            <br/>
+
+            <label for="subject"></label>
+            <textarea id="subject" name="subject" placeholder="Your Message" style="height:100px" style="width:100%"></textarea>
+            <br/>
+        
+            <!-- <input type="submit" value="Submit"> -->
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        
+        <!-- Footer Section -->
+        <footer class="mainFooter" style="background-color: #333; color: white;">
+            <section class="wrapper">
+                <div class="footerTop">
+
+                    <div class="footerBrand">
+                        <div>
+                            <img src="./project-1-store-novas/novas-project/assets/logo-white.png" alt="novas logo">
+                        </div>
+
+                        <div>
+                            <p class="aboutCompany">lorem shreehari ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt</p>
+                        </div>
+
+                        <div class="footerIcons">
+                            <a  href="https://www.facebook.com"><img class="footerImage"
+                                    src="./project-1-store-novas/novas-project/assets/icons/facebook.svg"></a>
+
+                            <a href="https://www.twitter.com"><img class="footerImage"
+                                    src="./project-1-store-novas/novas-project/assets/icons/twitter.svg"></a>
+
+                            <a href="https://www.instagram.com"><img class="footerImage"
+                                    src="./project-1-store-novas/novas-project/assets/icons/instagram.svg"></a>
+                        </div>
+                    </div>
+
+                    <div class="contact">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div >
+                            <ul>
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/address.svg" alt="address">
+                            No 40 Baria Street</li>
+
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/telephone.svg" alt="telephone">
+                            156-366-6666</li>
+
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/email.svg" alt="email">
+                            cool@example.com</li>
+
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/globe.svg" alt="website">
+                            www.novas.com</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="profile">
+                        <h3>Profile</h3>
+                        <ul>
+
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/user.svg" alt="address">
+                            My Account</li>
+            
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/checkout.svg" alt="telephone">
+                            Checkout</li>
+            
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/tracking.svg" alt="email">
+                            Order Tracking</li>
+            
+                            <li class="footerList"><img class="footerImg" src="./project-1-store-novas/novas-project/assets/icons/support.svg" alt="website">
+                            Help & Support</li>
+                        </ul>
+                    </div>
+
+                    <div class="newsLetter">
+                        <h3>Newsletter</h3>
+
+                        Subscribe to our newsletter<br>
+                        <input type="text" placeholder="Your e-mail.."><br>
+                        @ 2023 Novas
+                    </div>
+                </div>    
+            </section>
+        </footer>
+        <script>
+            const navSlide = () =>{
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.menu');
+                const navLinks = document.querySelectorAll('.menu li');
+                //toggle Nav
+                burger.addEventListener('click', ()=>{
+                 nav.classList.toggle('nav-active');
+       
+                //Animate links
+                navLinks.forEach((link,index)=>{
+                 if(link.style.animation){
+                    link.style.animation = '';
+                 } else{
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                 }   
+                });
+    
+                //Burger Animation
+                burger.classList.toggle('toggle');
+            }); 
+        }
+            navSlide();
+
+        //Building some error handling to be run on form submission
+            // const formElement = document.querySelector('form');
+            // const nameInput = document.querySelector('input[name="name"]');
+            
+            // let isFormValid = false;
+              
+            // const validateInputs = function(){
+            //      nameInput.classList.remove('invalid');
+                 
+
+            //     if(!nameInput.value){
+            //         nameInput.nextElementSibling.classList.remove('hidden');
+            //     isFormValid = false;
+            //     }
+            // };
+            // formElement.addEventListener('submit', function(e){
+            //     e.preventDefault();
+            //     if (validateInputs){
+            //         form.remove();
+            //     };
+            // });    
+
+            // nameInput.addEventListener('input',function(){
+            //     validateInputs();
+            // });
+            
+            const formName = document.getElementById('fname');
+            const formEmail = document.getElementById('email');
+            const formMessage = document.getElementById('subject');
+            const errorElement = document.getElementById('error');
+            const formElement = document.querySelector('form');
+
+            formElement.addEventListener('submit', function(e){
+                //    e.preventDefault();
+                    let messages = [];
+                    if(fname.value === '' || fname.value == null){
+                        messages.push('Name is required');
+                    }
+                    if(email.value.length <= 6){
+                        messages.push('email must be longer than 6 characters');
+                    }
+                    // if(subject.value.length >=30 );
+                    // messages.push('Your message must be less than 30 characters');
+         
+                    if(messages.length > 0){
+                        e.preventDefault();
+                        errorElement.innerText = messages.join(',');
+                    }  
+                });
+
+         </script>
+    </body>
+    </html>
