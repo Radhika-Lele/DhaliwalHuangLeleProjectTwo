@@ -672,10 +672,10 @@ h2 {
     gap:8px;
 
     img{
-            width: 100%;
-            height:auto;
-            object-fit: cover; 
-        }
+    width: 100%;
+    height:auto;
+    object-fit: cover; 
+}
 }*/
 /*.shoppingGalleryTwo{
     display:flex;
@@ -683,9 +683,9 @@ h2 {
     padding-top:20px;
 
     img{
-        width: 100%;
-        height:auto;
-        object-fit: cover; 
+width: 100%;
+height:auto;
+object-fit: cover; 
     }
 }*/
 /*.product{
