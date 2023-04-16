@@ -25,6 +25,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
     </head>
 
     <body>
@@ -49,12 +50,45 @@
 
             </nav>
             <div class="cartIcon">
-                <img src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png" alt="shopping cart" />
+                <img src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png" id="iconOfCart"
+                    alt="shopping cart" />
                 <!-- <a href="#"><i class="fa
                 fa-bag-shopping"></i></a> -->
-                <sup class="cartIconSup">2</sup>
             </div>
+
+             <!-- CART -->
+        <div class="addToCart">
+            <h2 class="cartTitle">Your Cart</h2>
+    
+         <!-- CONTENT -->
+         <div class="cartContent">
+            <!-- TEST BOX -->
+            <!-- <div class="cartBox">
+                <img src="./project-1-store-novas/novas-project/assets/prod-2.jpg" alt="" class="cartImage">
+                <div class="detailBox">
+                    <div class="cartProductTitle">Pendant Lamp</div>
+                    <div class="cartPrice">$ 45.25</div>
+                    <input type="number" value="1" class="cartQuantity">
+                </div> -->
+                <!-- REMOVE CART -->
+                <!-- <i class='bx bxs-trash-alt cart-remove'></i>
+            </div> -->
         </div>
+
+
+        <!-- TOTAL -->
+        <div class="total">
+            <div class="totalTitle">Total</div>
+            <div class="totalPrice">$ 0</div>
+        </div>
+        <!-- <BUY BUTTON> -->
+            <button type="button" class="buyButton">Buy Now</button>
+        <!-- CART CLOSE     -->
+        <i class='bx bx-x' id="cartClose"></i>
+      </div>
+    </div>
+
+       
 
         <!-- Header Section -->
         <header>
@@ -98,7 +132,7 @@
         </main>
 
 
-        <!-- Featured Sale Section -->
+<!-- Featured Sale Section -->
 
         <section class="wrapper">
             <h2>Featured Sale</h2>
@@ -114,102 +148,97 @@
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
                         <div class="selling">Sale</div>
-                        <img src="./project-1-store-novas/novas-project/assets/prod-1.jpg" alt="malm Chair">
-                        <div>
-                            <h4>Malm Chair</h4>
-                            <p>22 $</p>
-                            <div class="cart">
-                                <img
-                                    src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                    alt="add to cart">
-                            </div>
-                        </div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-1.jpg"  alt="malm Chair" class="productImg">
+                        <div class="productTitle">Maaaqlm Chair</div>
+                        <div class="productPrice">22 $</div>
+                        <div class="cart"><img
+                                src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-2.jpg" alt="Pendant Lamp">
-                        <div>pendant lamp</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-2.jpg" alt="Pendant Lamp" class="productImg">
+                        <div class="productTitle">pendant lamp</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
                         <div class="latest">New</div>
-                        <img src="./project-1-store-novas/novas-project/assets/prod-3.jpg" alt="Magnolia Dream">
-                        <div>Magnolia dream</div>
-                        <div> 18 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-3.jpg" alt="Magnolia Dream" class="productImg">
+                        <div class="productTitle">Magnolia dream</div>
+                        <div class="productPrice"> 18 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-4.jpg" alt="Malm Chair">
-                        <div>Malm Chair</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-4.jpg" alt="Malm Chair" class="productImg">
+                        <div class="productTitle">Malm Chair</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-5.jpg" alt="Pendant Lamp">
-                        <div>pendant lamp</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-5.jpg" alt="Pendant Lamp" class="productImg">
+                        <div class="productTitle">pendant lamp</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-6.jpg" alt="Candle">
-                        <div>Candle</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-6.jpg" alt="Candle" class="productImg">
+                        <div class="productTitle">Candle</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
-                    </div>
-
-                    <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-7.jpg" alt="lorem Ipsum">
-                        <div>lorem ipsum</div>
-                        <div>45 $</div>
-                        <div class="cart"><img
-                                src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-8.jpg" alt="Pendant Lamp">
-                        <div>pendant lamp</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-7.jpg" alt="lorem Ipsum" class="productImg">
+                        <div class="productTitle">lorem ipsum</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-9.jpg" alt="Pendant Lamp">
-                        <div>pendant lamp</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-8.jpg" alt="Pendant Lamp" class="productImg">
+                        <div class="productTitle">pendant lamp</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
                     </div>
 
                     <div class="productSlide" style="border:1px solid lightgrey;">
-                        <img src="./project-1-store-novas/novas-project/assets/prod-10.jpg" alt="pendant lamp">
-                        <div>pendant lamp</div>
-                        <div>45 $</div>
+                        <img src="./project-1-store-novas/novas-project/assets/prod-9.jpg" alt="Pendant Lamp" class="productImg">
+                        <div class="productTitle">pendant lamp</div>
+                        <div class="productPrice">45 $</div>
                         <div class="cart"><img
                                 src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart"></div>
+                                alt="add to cart" class="addCart"></div>
+                    </div>
+
+                    <div class="productSlide" style="border:1px solid lightgrey;">
+                        <img src="./project-1-store-novas/novas-project/assets/prod-10.jpg" alt="pendant lamp" class="productImg">
+                        <div class="productTitle">pendant lamp</div>
+                        <div class="productPrice">45 $</div>
+                        <div class="cart"><img
+                                src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
+                                alt="add to cart" class="addCart"></div>
                     </div>
                 </div>
             </div>
             <br /><br />
-
         </section>
 
 
@@ -333,112 +362,7 @@
             </section>
         </footer>
 
-    <script>
-            //Hamburger Menu 
-            const navSlide = () => {
-                const burger = document.querySelector('.burger');
-                const nav = document.querySelector('.menu');
-                const navLinks = document.querySelectorAll('.menu li');
-                //toggle Nav
-                burger.addEventListener('click', () => {
-                    nav.classList.toggle('nav-active');
-
-                    //Animate links
-                    navLinks.forEach((link, index) => {
-                        if (link.style.animation) {
-                            link.style.animation = '';
-                        } else {
-                            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                        }
-                    });
-
-                    //Burger Animation
-                    burger.classList.toggle('toggle');
-                });
-            }
-            navSlide();
-
-        //Instagram section popup modal
-            document.querySelectorAll('.instaGallery img').forEach(image => {
-                image.onclick = () => {
-                    document.querySelector('.popupImage').style.display = 'block';
-                    document.querySelector('.popupImage img').src = image.getAttribute('src');
-                }
-            });
-            document.querySelector('.popupImage span').onclick = () => {
-                document.querySelector('.popupImage').style.display = 'none';
-            }
-
-            //featured Sale section Image slider
-            // document.getElementById('next').onclick = function(){
-            //     const widthItem = document.querySelector('.productSlide').offsetWidth;
-            //     document.querySelector('.shoppingGalleryOne').scrollLeft += widthItem;
-            // }
-            // document.getElementById('prev').onclick = function(){
-            //     const widthItemOne = document.querySelector('.productSlide').offsetWidth;
-            //     document.querySelector('.shoppingGalleryOne').scrollLeft -= widthItemOne;
-            // } 
-
-
-            //BEGIN Image Carousel for featured sale section
-            function modulo(number, mod) {
-                let result = number % mod;
-                if (result < 0) {
-                    result += mod;
-                }
-                return result;
-            }
-
-            function setUpCarousel(carousel) {
-                function handleNext() {
-                    if (currentSlide<4)
-                    {
-                        currentSlide = modulo(currentSlide + 1, numSlides);
-                        changeSlide(currentSlide);
-                    }
-                    if (currentSlide == 4)
-                    {
-                        buttonNext.display=none;
-                    }
-                }
-
-                function handlePrevious() {
-                    if (currentSlide>0)
-                    {
-                    currentSlide = modulo(currentSlide - 1, numSlides);
-                    changeSlide(currentSlide);
-                    }
-                    if (currentSlide == 0)
-                    {
-                        buttonPrevious.display='none';
-                    }
-                }
-
-                function changeSlide(slideNumber) {
-                    carousel.style.setProperty('--current-slide', slideNumber);
-
-                }
-
-                // get elements
-                const buttonPrevious = carousel.querySelector('[data-carousel-button_previous]');
-                const buttonNext = carousel.querySelector('[data-carousel-button_next]');
-                const slidesContainer = carousel.querySelector('[data-product_slides]');
-
-                // carousel state we need to remember
-                let currentSlide = 0;
-                const numSlides = slidesContainer.children.length;
-
-                // set up events
-                buttonPrevious.addEventListener('click', handlePrevious);
-                buttonNext.addEventListener('click', handleNext);
-            }
-
-            const carousels = document.querySelectorAll('[data-carousel_gallery]');
-            carousels.forEach(setUpCarousel);
-            //END Image Carousel for featured sale section
-
-
-    </script>
+    <script src="./scripts/scripts.js" type="module"></script>
     </body>
 
     </html>

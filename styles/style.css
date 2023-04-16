@@ -251,7 +251,6 @@ a {
   padding: 10px 20px;
   color: black;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
 }
 
 nav a:hover, nav a:focus {
@@ -266,14 +265,23 @@ nav a:hover, nav a:focus {
 }
 
 .cartIcon {
-  margin: 20px 35px 0 0;
+  margin: 20px 55px 0 0;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .cartIconSup {
   position: absolute;
   top: 5px;
-  left: 40px;
   vertical-align: top;
 }
 
@@ -289,6 +297,122 @@ nav a:hover, nav a:focus {
   height: 2px;
   background-color: rgb(100, 100, 100);
   margin: 5px;
+}
+
+.addToCart {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  z-index: 1;
+  background-color: lightgray;
+}
+
+.addToCart.active {
+  right: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cartTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cartBox {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cartImage {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.detailBox {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cartProductTitle {
+  font-size: 1 rem;
+  text-transform: uppercase;
+}
+
+.cartPrice {
+  font-weight: 500;
+}
+
+.cartQuantity {
+  border: 1px solid lightgray;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid lightgrey;
+}
+
+.totalTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.totalPrice {
+  margin-left: 0.5rem;
+}
+
+.buyButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: none;
+  color: darkslategray;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background-color: olivedrab;
+}
+
+#cartClose {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -710,11 +834,9 @@ h2 {
 }*/
 .cart {
   width: 30px;
-  position: relative;
+  cursor: pointer;
   border: 0.5px solid lightgrey;
   height: 30px;
-  bottom: 40px;
-  left: 480px;
 }
 .cart img {
   width: 28px;

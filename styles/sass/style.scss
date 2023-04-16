@@ -15,6 +15,7 @@
             padding-top:10px; 
             position: relative;
             background-position: center;
+            // z-index: 0;
         }
         .headerContainer {
             position: absolute;
@@ -188,11 +189,9 @@
 
         .cart{
             width: 30px;
-            position: relative;
+            cursor: pointer;
             border : 0.5px solid  $color-secondary;
             height :30px; 
-            bottom:40px; 
-            left :480px;
            
                img{
                 width: 28px;
