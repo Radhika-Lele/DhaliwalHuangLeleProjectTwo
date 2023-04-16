@@ -1,4 +1,4 @@
-    // Navigation Bar
+// Navigation Bar
     .wrapperOne{
         display: flex;
         justify-content: space-between;
@@ -22,14 +22,17 @@
         border-right-style: hidden;
     }
 
-
     .logo{
         margin: 20px 0 0 30px;
     }
 
     .cartIcon{
-        margin: 20px 35px 0 0;
+        margin: 20px 55px 0 0;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
     .cartIconSup{
         position: absolute;
@@ -42,16 +45,117 @@
         position: absolute;
         top: 15px;
         cursor: pointer;
-  }
+   }
  
-
     .burger div{
             width: 25px;
             height: 2px;
             background-color : rgb(100, 100, 100);
             margin: 5px;
         }
-        
+
+// CART SECTION
+.addToCart{
+   position : absolute;
+   top: 0;
+//  right :0;
+   right : -100%;
+   width : 360px;
+   height : 50vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding: 20px;
+   border: 1px solid lightgrey;
+   transition: 1.5s;
+   z-index: 1;
+   background-color: lightgray;
+}
+
+.addToCart.active{
+    right : 0;
+    transition: 0.5s ;
+    //  position: relative;
+}
+// .cartBox img{
+//     width:50px;
+// }
+
+.cartTitle{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top:2rem;
+}
+.cartBox{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cartImage{
+    width: 100px;
+    height:100px;
+    object-fit: contain;
+}
+
+.detailBox{
+    display: grid;
+    row-gap : 0.5rem;
+}
+.cartProductTitle{
+    font-size: 1 rem ;
+    text-transform: uppercase;
+}
+.cartPrice{
+    font-weight: 500;
+
+}
+.cartQuantity{
+    border : 1px solid lightgray;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    cursor: pointer;
+}
+.total{
+    display:flex ;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid lightgrey;
+}
+
+.totalTitle{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.totalPrice{
+    margin-left: 0.5rem;
+}
+.buyButton{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: none;
+    color : darkslategray ;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor:pointer; 
+}
+
+.buyButton:hover{
+    background-color: olivedrab;
+}
+
+#cartClose{
+position: absolute;
+top:1rem;
+right: 0.8rem;
+font-size: 2rem;
+cursor: pointer;
+}
 
 
 
