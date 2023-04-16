@@ -1,13 +1,9 @@
-        @use './setup';
-        @use './nav';
-        @use './media';
+        @use './partials/setup';
+        @use './partials/nav';
+        @use './partials/media';
+        @use './partials/variables';
 
-        $myFont : 'Poppins', sans-serif;
-        $baseFont: 'Josefin Sans', sans-serif;
-        $bottomFont:'Barlow', sans-serif;
-        $upFont:'Offside', cursive;
-        $color-primary:white;
-        $color-secondary:lightgrey;
+        @use "./partials/variables" as *;
 
 
         // Header section style
@@ -42,6 +38,7 @@
                 line-height :1.5em;
                 margin: 0;
                 padding-top: 20px;
+                font-weight: 300;
         }
     
 
@@ -60,7 +57,7 @@
                 img{
                     width: 100%;
                     height:auto;
-                object-fit: cover;         
+                    object-fit: cover;         
                 }
             }
         }
@@ -84,8 +81,15 @@
         .positionThree{
             position: relative;
             bottom: 31px;
-            background: $color-primary;
             display: inline-block;
+
+            p {
+                background: $color-primary;
+                padding: 5px 10px;
+                position: relative;
+                bottom: 31px;
+                font-size: 14px;
+            }
         }
 
 

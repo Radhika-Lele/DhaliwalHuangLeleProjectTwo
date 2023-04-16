@@ -226,6 +226,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 .wrapperOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +249,9 @@ html {
 a {
   text-decoration: none;
   padding: 10px 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 
 nav a:hover, nav a:focus {
@@ -266,6 +273,7 @@ nav a:hover, nav a:focus {
 .cartIconSup {
   position: absolute;
   top: 5px;
+  left: 40px;
   vertical-align: top;
 }
 
@@ -546,6 +554,7 @@ header p {
   line-height: 1.5em;
   margin: 0;
   padding-top: 20px;
+  font-weight: 300;
 }
 
 .imageSection ul {
@@ -596,8 +605,16 @@ header p {
 .positionThree {
   position: relative;
   bottom: 31px;
-  background: white;
   display: inline-block;
+}
+.positionOne p,
+.positionTwo p,
+.positionThree p {
+  background: white;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 31px;
+  font-size: 14px;
 }
 
 h2 {
