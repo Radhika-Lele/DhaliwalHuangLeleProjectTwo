@@ -962,17 +962,57 @@ h2 {
      object-fit: cover;
 }
 
+footer {
+  height: 50vh;
+}
+
+.mainFooter {
+  background-color: #333;
+  color: white;
+}
+
+.footerJuno {
+  background-color: #d7b89c;
+  height: 3vh;
+  text-align: center;
+}
+.footerJuno p {
+  padding: 2px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.footerJuno p a {
+  text-transform: none;
+}
+
 .footerTop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0;
+  padding: 45px 0 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .footerTop .footerBrand {
   width: 245px;
+}
+.footerTop .footerBrand p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+
+.footerColumn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  margin: 0 10px;
+}
+.footerColumn i {
+  width: 16px;
+  height: 16px;
 }
 
 .footerImage {
@@ -988,6 +1028,17 @@ h2 {
 
 .footerList {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+.footerList p {
+  padding: 0 10px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .contact ul,
@@ -1002,17 +1053,36 @@ h2 {
 .footerIcons a {
   padding: 0;
   padding-right: 10px;
+  color: white;
 }
 
 h3 {
   margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.newsLetter p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+.newsLetter input[type=text] {
+  background-color: #333;
+  color: white;
+  font-size: 12px;
 }
 
 .contactHeader {
   background: url(./../project-1-store-novas/novas-project/assets/contact-us.jpg);
-  height: 70vh;
-  padding: 158px 0px 0px 145px;
+  height: 40vh;
   background-position: center;
+  background-repeat: no-repeat;
+}
+.contactHeader h1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
 }
 
 .container {

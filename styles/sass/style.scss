@@ -337,13 +337,58 @@
 
         //  Footer section
 
+        footer {
+            height: 50vh;
+            // background-color: #333;
+            // color: white;
+        }
+        .mainFooter {
+            background-color: #333;
+            color: white;
+        }
+
+        .footerJuno {
+            background-color: #d7b89c;
+            height: 3vh;
+            text-align: center;
+
+            p {
+                padding: 2px;
+                font-weight: 300;
+                font-size: 12px;
+                color: #333;
+                
+                a {
+                    text-transform: none;
+                }
+            }
+        }
+
         .footerTop{
             display: flex;
-            padding:50px 0;
+            padding: 45px 0 10px;
             justify-content: space-between;
+
             
             .footerBrand{
                 width: 245px;
+
+                p {
+                    font-size: 13px;
+                    // font-weight: 300;
+                    line-height: 1.5;
+                    margin: 20px 0px;
+                }
+            }
+        }
+
+        .footerColumn {
+            flex: 1 1 25%;
+            margin: 0 10px;
+
+            i {
+                width: 16px;
+                height: 16px;
             }
         }
 
@@ -360,6 +405,16 @@
 
         .footerList{
             list-style-type: none;
+            display: flex;
+            margin: 15px 0;
+
+            p {
+                padding: 0 10px;
+                margin: 0;
+                font-size: 13px;
+                font-weight: 300;
+                cursor: pointer;
+            }
         }
 
         .contact ul,
@@ -372,18 +427,42 @@
         .footerIcons a{
             padding: 0;
             padding-right: 10px;
+            color: white;
         }
         h3{
             margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .newsLetter {
+            p {
+                margin: 0;
+                font-size: 13px;
+                font-weight: 300;
+            }
+
+            input[type=text] {
+                background-color: #333;
+                color: white;
+                font-size: 12px;
+            }
         }
 
         // Contact Section Style
         .contactHeader {
             background: url(./../project-1-store-novas/novas-project/assets/contact-us.jpg);
-            height: 70vh;
-            padding: 158px 0px 0px 145px;
+            height: 40vh;
+            // padding: 158px 0px 0px 145px;
             background-position: center;
+            background-repeat: no-repeat;
+            
+            h1 {
+                position: absolute;
+                top: 40%;
+                left: 20%;
             }
+        }
         
         .container{
             flex-direction: column;
