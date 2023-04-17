@@ -872,20 +872,43 @@ h2 {
 .couch .firstCouch img {
   width: 100%;
 }
+.couch .firstCouch .saleText {
+  background-color: #fff;
+  color: #d7b89c;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 5px 10px;
+}
+.couch .firstCouch .salePercentage {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 10px;
+}
+.couch .firstCouch .shopNow {
+  color: #fff;
+  text-transform: capitalize;
+}
+.couch .sale {
+  display: inline-block;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-family: "Offside", cursive;
+  font-family: "Poppins", sans-serif;
+}
 .couch .secondCouch {
   width: 70%;
 }
 .couch .secondCouch img {
   width: 100%;
 }
-
-.sale {
-  background: #d7b89c;
-  display: inline-block;
-  color: white;
-  font-family: "Barlow", sans-serif;
-  font-family: "Offside", cursive;
-  font-family: "Poppins", sans-serif;
+.couch .secondCouch p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.couch .secondCouch p span {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .eliasCouch {

@@ -238,13 +238,44 @@
             
             .firstCouch{
                 max-width:34%;
-                
                 // position: absolute;
                 
                 img {
                     width: 100%;
                 } 
+
+                .saleText {
+                    background-color: #fff;
+                    color: #d7b89c;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin: 5px 10px;
+                }
+                .salePercentage {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    color: #fff;
+                    margin: 10px;
+                }
+
+                .shopNow {
+                    color: #fff;
+                    text-transform: capitalize;
+                }
             }
+
+            .sale{
+                // background: #d7b89c;
+                display: inline-block;
+                // position: relative;
+                // bottom: 200px;
+                color:  $color-primary;  
+                font-family:  $bottomFont;
+                font-family: $upFont;
+                font-family: $myFont;
+            }
+
+            
             .secondCouch{
                 width:70%;
                 // padding-right: 120px;
@@ -254,17 +285,18 @@
                     width: 100%;
                     // height: 392px;
                 }
+
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                
+                    span {
+                        font-size: 2rem;
+                        font-weight: 600;
+                    }
+                }
+                
             }
-        }
-        .sale{
-            background: #d7b89c;
-            display: inline-block;
-            // position: relative;
-            // bottom: 200px;
-            color:  $color-primary;  
-            font-family:  $bottomFont;
-            font-family: $upFont;
-            font-family: $myFont;
         }
         .eliasCouch{
             color: $color-primary;
@@ -277,6 +309,7 @@
             font-family: $upFont;
             font-family: $myFont;
         }
+
 
         // instagramShop
 
