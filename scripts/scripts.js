@@ -12,94 +12,94 @@ import {getDatabase, ref, push, set} from "https://www.gstatic.com/firebasejs/9.
 const database = getDatabase(app);
 
 // Next, we create a reference to point to our database:
-const dbRef = ref(database);
+const inventoryRef = ref(database, '/inventory');
 
-// console.log(dbRef);
+// console.log(inventoryRef);
 
-// push( dbRef, "Hello World!");
+// push( inventoryRef, "Hello World!");
 
 
 // Step 2: get data onto firebase
 // Step 2: Declare a function that will add our data, both the inventory, image and price, to our database. Set up specific key names to go with our data as well.
 
-const addToDatabase = (key, value) => {
-    const customRef = ref(database, key);
-    set(customRef, value);
-}
+// const addToDatabase = (key, value) => {
+//     const customRef = ref(database, key);
+//     set(customRef, value);
+// }
 
 
-const inventory = [
-        {
-        title: "Maal Chair",
-        url: "./project-1-store-novas/novas-project/assets/prod-1.jpg",
-        price: 22,
-        symbol: "$",
-        stock: 3,
-        },
-        {
-        title: "Pendant lamp",
-        url: "./project-1-store-novas/novas-project/assets/prod-2.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4,
-        },
-        {
-        title: "Magnolia dream",
-        url: "./project-1-store-novas/novas-project/assets/prod-3.jpg",
-        price: 18,
-        symbol: "$",
-        stock: 5,
-        },
-        {
-        title: "Malm Chair",
-        url: "./project-1-store-novas/novas-project/assets/prod-4.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4,
-        },
-        {
-        title: "Malm Chair",
-        url: "./project-1-store-novas/novas-project/assets/prod-5.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4,
-        },
-        {
-        title: "pendant lamp",
-        url: "./project-1-store-novas/novas-project/assets/prod-6.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 2,
-        },
-        {
-        title: "lorem ipsum",
-        url: "./project-1-store-novas/novas-project/assets/prod-7.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4,
-        },
-        {
-        title: "pendant lamp",
-        url: "./project-1-store-novas/novas-project/assets/prod-8.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4,
-        },
-        {
-        title: "lorem ipsum",
-        url: "./project-1-store-novas/novas-project/assets/prod-9.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4,
-        },
-        {
-        title: "pendant lamp",
-        url: "./project-1-store-novas/novas-project/assets/prod-10.jpg",
-        price: 45,
-        symbol: "$",
-        stock: 4
-        }
-    ]
+// const inventory = [
+//         {
+//         title: "Maal Chair",
+//         url: "./project-1-store-novas/novas-project/assets/prod-1.jpg",
+//         price: 22,
+//         symbol: "$",
+//         stock: 3,
+//         },
+//         {
+//         title: "Pendant lamp",
+//         url: "./project-1-store-novas/novas-project/assets/prod-2.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4,
+//         },
+//         {
+//         title: "Magnolia dream",
+//         url: "./project-1-store-novas/novas-project/assets/prod-3.jpg",
+//         price: 18,
+//         symbol: "$",
+//         stock: 5,
+//         },
+//         {
+//         title: "Malm Chair",
+//         url: "./project-1-store-novas/novas-project/assets/prod-4.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4,
+//         },
+//         {
+//         title: "Malm Chair",
+//         url: "./project-1-store-novas/novas-project/assets/prod-5.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4,
+//         },
+//         {
+//         title: "pendant lamp",
+//         url: "./project-1-store-novas/novas-project/assets/prod-6.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 2,
+//         },
+//         {
+//         title: "lorem ipsum",
+//         url: "./project-1-store-novas/novas-project/assets/prod-7.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4,
+//         },
+//         {
+//         title: "pendant lamp",
+//         url: "./project-1-store-novas/novas-project/assets/prod-8.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4,
+//         },
+//         {
+//         title: "lorem ipsum",
+//         url: "./project-1-store-novas/novas-project/assets/prod-9.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4,
+//         },
+//         {
+//         title: "pendant lamp",
+//         url: "./project-1-store-novas/novas-project/assets/prod-10.jpg",
+//         price: 45,
+//         symbol: "$",
+//         stock: 4
+//         }
+//     ]
 
 // addToDatabase("inventory", inventory);
 

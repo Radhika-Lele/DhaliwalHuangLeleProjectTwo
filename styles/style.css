@@ -753,7 +753,8 @@ h2 {
   /* we set position relative so absolute position works properly for the buttons */
   position: relative;
   overflow: hidden;
-  max-height: 50vh;
+  max-height: 100vh;
+  margin-bottom: 30px;
 }
 
 .carousel-button {
@@ -771,6 +772,10 @@ h2 {
   cursor: pointer;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
+}
+.carousel-button p {
+  padding: 0 5px;
+  margin: 8px 5px;
 }
 
 .carousel-button:hover {
