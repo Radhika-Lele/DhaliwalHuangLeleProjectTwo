@@ -216,13 +216,13 @@ carousels.forEach(setUpCarousel);
 // OPEN AND CLOSE CART
 const cartIcon = document.querySelector('#iconOfCart');
 const cart = document.querySelector('.addToCart');
-const closecart = document.querySelector('#cartClose');
+const closeCart = document.querySelector('#cartClose');
 
 cartIcon.addEventListener('click', ()=>{
     cart.classList.add('active');
 });
 
-closecart.addEventListener('click', ()=>{
+closeCart.addEventListener('click', ()=>{
     cart.classList.remove('active');
 });
 
@@ -333,12 +333,12 @@ function handleBuyOrder(){
     update();
 }
 
-// UPDATE & RERENDER FUNCTIONS
-function updateTotal(){
+// UPDATE & RE-RENDER FUNCTIONS
+function updateTotal() {
     let cartBoxes = document.querySelectorAll('.cartBox')
     const totalElement = cart.querySelector('.totalPrice');
     let total = 0;
-    cartBoxes.forEach((cartBox) =>{
+    cartBoxes.forEach((cartBox) => {
        let priceElement = cartBox.querySelector('.cartPrice');
        let price = parseFloat(priceElement.innerHTML.replace('$', ''));
        let quantity = cartBox.querySelector('.cartQuantity').value;
