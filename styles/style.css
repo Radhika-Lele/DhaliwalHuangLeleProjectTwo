@@ -647,9 +647,12 @@ nav a:hover, nav a:focus {
   .firstCouch {
     position: relative;
   }
+  .productSlide {
+    border: 1px solid lightgrey;
+  }
 }
 header {
-  background: url(./../project-1-store-novas/novas-project/assets/home.jpg);
+  background: url(../assets/home.jpg);
   background-repeat: no-repeat;
   height: 94vh;
   background-size: cover;
@@ -1102,7 +1105,7 @@ h3 {
 }
 
 .contactHeader {
-  background: url(./../project-1-store-novas/novas-project/assets/contact-us.jpg);
+  background: url(../assets/contact-us.jpg);
   height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
