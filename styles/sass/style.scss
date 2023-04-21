@@ -156,16 +156,18 @@
             flex: 0 0 100%;
             max-width: 50%;
             text-align: center;
+            border:1px solid lightgrey;
+            
                 
                img{
                     width:50%;
                }
 
           }
-          
 
+         
 
-        /*.shoppingGalleryOne{
+        *.shoppingGalleryOne{
             display:flex;
             gap:8px;
             
@@ -174,10 +176,10 @@
                     height:auto;
                     object-fit: cover; 
                 }
-        }*/
+        }*
 
 
-        /*.shoppingGalleryTwo{
+        *.shoppingGalleryTwo{
             display:flex;
             gap: 8px;
             padding-top:20px;
@@ -187,11 +189,11 @@
                 height:auto;
                 object-fit: cover; 
             }
-        }*/
+        }*
 
-        /*.product{
+        *.product{
             position: relative;
-        }*/
+        }*
 
         .cart{
             width: 30px;
@@ -539,3 +541,40 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+
+
+
+
+        // NEW PAGE RPODUUCTS
+
+        // OUR PRODUCTS/SHOP SECTION
+
+        .viewAll {
+            text-align: center;
+            margin: 20px;;
+          }
+          
+          .searchContainer {
+            background: white;
+            padding: 10px;
+            form {
+                width: 33%;
+                border: 1px solid purple;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                input {
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                i {
+                    padding-left: 10px;
+                }
+
+            }
+          }

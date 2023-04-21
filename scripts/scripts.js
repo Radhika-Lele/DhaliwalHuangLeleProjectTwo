@@ -5,14 +5,16 @@
 // Step 1: set up firebase
 
 import app from "./firebase.js";
-import {getDatabase, ref, push, set} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import {getDatabase, ref, push, set, onValue} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 
 // First, we connect to the Realtime DB service in our firebase project's back end: 
 const database = getDatabase(app);
+const dbRef = ref(database);
 
 // Next, we create a reference to point to our database:
 const inventoryRef = ref(database, '/inventory');
+console.log(inventoryRef);
 
 // console.log(inventoryRef);
 
@@ -247,7 +249,6 @@ function update(){
 function addEvents(){
     // remove items from cart
     let cartRemoveButtons = document.querySelectorAll('.cart-remove');
-    console.log(cartRemoveButtons);
     cartRemoveButtons.forEach( (btn) =>{
         btn.addEventListener('click',handle_removeCartItem);
     });
@@ -260,7 +261,6 @@ function addEvents(){
 
     //add item to cart
     let addCartButtons = document.querySelectorAll('.addCart');
-    console.log(addCartButtons);
     addCartButtons.forEach( (button) =>{
         button.addEventListener('click', handleAddCartItem);
     });
@@ -370,4 +370,25 @@ function cartBoxComponent(title,price,imgSrc){
 
 
 // -------- SEARCH BAR --------
+
+
+// const search = () => {
+//     const searchBox = document.getElementById("searchBar").value.toLowerCase();
+//     const storeItems = dbRef.inventory;
+//     console.log(storeItems);
+// }
+
+
+// onValue(dbRef, function(data) {
+//     const ourData = data.val();
+// })
+
+// const storeItems = dbRef.inventory;
+// console.log(storeItems);
         
+// const searchInput = document.querySelector("[dataSearch]");
+
+// searchInput.addEventListener("input", () => {
+//     const searchText = searchInput.value;
+    
+// })
