@@ -23,6 +23,7 @@ onValue(inventoryRef, (firebaseData) => {
         listItem.id = key
 
         const titleElement = document.createElement("h4")
+        titleElement.id = "searchId"
         titleElement.innerText = productTitle
 
         const imageElement = document.createElement("img")
@@ -32,15 +33,14 @@ onValue(inventoryRef, (firebaseData) => {
         const priceElement = document.createElement("p")
         priceElement.innerText = productPrice
 
-
-
-
         listItem.append(titleElement, imageElement, priceElement);
         ulElement.append(listItem);
     }
 
-    
-    
-    
-    
 })
+
+// search bar
+
+const search = () => {
+    const searchBox = document.getElementById("searchBar").value.toLowerCase();
+}
