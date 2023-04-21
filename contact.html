@@ -1,0 +1,177 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Contact Us | Novas</title>
+        <script src="https://kit.fontawesome.com/60d37f1f0e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+    </head>
+    <body>
+    <!-- Navigation Bar -->
+    <div class="wrapperOne">
+        <div class="logo">
+            <img src="./assets/logo-black.png" alt="novas logo">
+        </div>
+        <!-- <input id="menuButton" type="checkbox"/>
+        <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label> -->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <div class="cartIcon">
+            <img src="./assets/icons/shopping-cart-black-icon.png"
+                alt="shopping cart"><sup class="cartIconSup">2</sup>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="contactHeader">
+        <div class="wrapper">
+            <div class="contactTitle">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section First -->
+    <div class="container">
+        <div id="error"></div>
+        <form action="/" method="GET">
+        
+            <label for="fname"></label>
+            <input type="text" id="fname" name="name" placeholder="Your name.. *" required>
+                
+            <div class="error-hint hidden">Your name is required.</div>
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Your e-mail">
+            <br/>
+
+            <label for="subject"></label>
+            <textarea id="subject" name="subject" placeholder="Your Message" style="height:100px" style="width:100%"></textarea>
+            <br/>
+            
+            <!-- <input type="submit" value="Submit"> -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+        
+        <!-- Footer Section -->
+        <footer class="mainFooter">
+            <section class="wrapper mainFooter">
+                <div class="footerTop">
+
+                    <div class="footerColumn footerBrand">
+                        <div>
+                            <img src="./assets/logo-white.png" alt="novas logo">
+                        </div>
+
+                        <div>
+                            <p class="aboutCompany">lorem shreehari ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt</p>
+                        </div>
+
+                        <div class="footerIcons">
+                            <a href="https://www.facebook.com">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="https://www.twitter.com">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footerColumn contact">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="footerList">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    <p>No 40 Baria Street</p>
+                                </li>
+
+                                <li class="footerList">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>156-366-6666</p> 
+                                </li>
+
+                                <li class="footerList">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <p>cool@example.com</p>
+                                </li>
+
+                                <li class="footerList">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <p>www.novas.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footerColumn profile">
+                        <h3>Profile</h3>
+                        <ul>
+                            <li class="footerList">
+                                <i class="fa-regular fa-user"></i>
+                                <p>My Account</p>
+                            </li>
+
+                            <li class="footerList">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Checkout</p>
+                            </li>
+
+                            <li class="footerList">
+                                <i class="fa-solid fa-truck"></i>
+                                <p>Order Tracking</p>
+                            </li>
+
+                            <li class="footerList">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <p>Help & Support</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footerColumn newsLetter">
+                        <h3>Newsletter</h3>
+
+                        <p>Subscribe to our newsletter</p>
+                        <br>
+                        <form action="/">
+                            <label for="email"></label>
+                            <input type="text" id="email" name="email" placeholder="Your e-mail..">                            
+                        </form>
+                        <br>
+                        <p>@ 2023 Novas</p>
+                    </div>
+                </div>
+            </section>
+            <section class="footerJuno">
+                <p><a href="https://junocollege.com/">Created at Juno College.</a></p>
+            </section>
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,218 @@
+                // Header section
+
+                @media(max-width:700px){
+                    //body{
+                        //display: none
+                    //}
+                    .menu{
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+ 
+                    header{
+                            background-repeat:no-repeat;
+                            background-size:contain;
+                            background-position:center; 
+                            background-position-x:50%; 
+                    }
+                    .shoppingGalleryOne,
+                    .shoppingGalleryTwo{
+                        flex-wrap: wrap;
+                    }
+                    .product{
+                        flex: 1 0 30%;
+                    }
+                    .instagram{
+                        flex-wrap: wrap;
+                    }
+                    .instaGallery{
+                        flex : 1 0 27%;
+                    }
+                
+                    .footerTop{
+                        flex-wrap: wrap;
+                    }
+                    
+                    .aboutCompany{
+                        transform: translateY(0%);
+                    }
+                
+                    // .secondCouch{
+                    //     max-width: 50vh;
+                    // }
+                    .eliasCouch{
+                        top: -134px;
+                        font-size: 0.9em;
+                    
+                    }
+                    .footerIcons{
+                        margin-bottom: 20px;
+                    }
+
+                    .couch{
+                        column-gap: 5px;
+                    }
+                    .sale{
+                        position: relative;
+                        bottom: 200px;
+                    }
+                    .contactHeader{
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:center; 
+                        background-position-x:50%; 
+                    }
+
+                }
+
+                @media(min-width : 701px){
+                    .secondCouch{
+                        padding-right: 120px;
+                    }
+                    .firstCouch{
+                        padding:0 30px 0 30px;
+                    }
+                    .sale{
+                        position: relative;
+                        bottom: 200px;
+                }
+            }
+                
+                // Image Section
+
+                @media(max-width : 600px){
+                    body{
+                        overflow-x: hidden;
+                       }
+                    
+                    h1{
+                        font-size: 1.6em;
+                        // margin: 160px 0 0 80px;
+                    }
+
+                    header{
+                        max-height: 500px;
+                    }
+                    .product{
+                        flex: 1 0 49%;
+                    }
+
+                    .firstSection, .secondSection{
+                    flex: 50%;
+                    max-width: 100%;
+                    }
+                    .shoppingGalleryOne, .shoppingGalleryTwo{
+                    flex-wrap: wrap;
+                        
+                        }
+                    .seeAll{
+                        width: 19%;
+                    }  
+                    .instagram{
+                        flex-wrap: wrap;
+                    }
+                    
+                    .instaGallery{
+                        flex : 1 0 28%;
+                    }
+                    .footerTop{
+                        flex-wrap: wrap;
+                    }
+                    .popupImage img{
+                        max-width: 95%;
+                    }
+                    .aboutCompany{
+                        transform:none;
+                    }
+                    .profile, .newsLetter{
+                        padding-top: 30px;
+                    }
+                    .contact ul{
+                        margin-top: 0px;
+                    }
+                    .container{
+                        width: 100%;
+                    }
+                    .wrapperOne{
+                        height:10vh;
+                    }
+                    .burger{
+                        display: block;
+                    }
+                     .menu{
+                         flex-direction: column;
+                        align-items: center;
+                        position: absolute;
+                        right: 0px;
+                        // height: 92vh;
+                        top: 2vh;
+                        width:130%;
+                        transform: translateX(100%);
+                        transition: transform 0.5s ease-in;
+                    }
+                    .menu li{
+                        opacity :0;
+                    }
+                } 
+
+                .nav-active{
+                    transform: translateX(0%);
+                }
+                @keyframes navLinkFade {
+                    from{
+                        opacity: 0;
+                        transform: translateX(50px);
+                    }
+                    to{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+
+                .toggle .line1{
+                    transform : rotate(-45deg) translate(-5px,6px);
+                }
+                .toggle .line2{
+                    opacity: 0;
+                }
+                .toggle .line3{
+                    transform : rotate(45deg) translate(-5px,-6px);
+                }
+
+
+                @media(max-width :435px){
+                   body{
+                    overflow-x: hidden;
+                   }
+                   
+                
+                    .wrapperOne{
+                        height:80px;
+                    }
+
+                    .imageSection ul{
+                        flex-wrap: wrap;
+                    }
+                    .seeAll{
+                        width: 33%;
+                    }
+                    
+                    .sale{
+                        position: absolute;
+                        left: 5%;
+                        top:0;
+                    }
+                    .firstCouch{
+                        position: relative;
+                    }
+                }
+
+
+
+
+                
+
+
