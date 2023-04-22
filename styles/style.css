@@ -226,6 +226,561 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background: url(../assets/home.jpg);
+  background-repeat: no-repeat;
+  height: 94vh;
+  background-size: cover;
+  padding-top: 10px;
+  position: relative;
+  background-position: center;
+}
+
+.headerContainer {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header p {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 300;
+}
+
+.imageSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+.imageSection ul li {
+  width: 100%;
+  margin: 10px;
+}
+.imageSection ul li img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.thirdImage {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.secondImageImage {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.firstImage {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.positionOne,
+.positionTwo,
+.positionThree {
+  position: relative;
+  bottom: 31px;
+  display: inline-block;
+}
+.positionOne p,
+.positionTwo p,
+.positionThree p {
+  background: white;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 31px;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.shoppingGalleryOne {
+  --current-slide: 0;
+  /* we set position relative so absolute position works properly for the buttons */
+  position: relative;
+  overflow: hidden;
+  max-height: 100vh;
+  margin-bottom: 30px;
+}
+
+.carousel-button {
+  /* vertically centering the buttons */
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  /* basic styling */
+  padding: 0;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-color: #d7b89c;
+  border: #668;
+  font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.carousel-button p {
+  padding: 0 5px;
+  margin: 8px 5px;
+}
+
+.carousel-button:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #88cce2;
+}
+
+.carousel-button_next {
+  /* The "next slide button" will be at the right */
+  right: 0;
+}
+
+.productSlides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translateX(calc(-100% * var(--current-slide)));
+          transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.productSlide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 50%;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+.productSlide img {
+  width: 50%;
+}
+
+*.shoppingGalleryOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+*.shoppingGalleryOne img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* *.shoppingGalleryTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  padding-top: 20px;
+}
+* *.shoppingGalleryTwo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* *.product {
+  position: relative;
+}
+
+* .cart {
+  width: 30px;
+  cursor: pointer;
+  border: 0.5px solid lightgrey;
+  height: 30px;
+}
+* .cart img {
+  width: 28px;
+}
+
+.secondSection .seeAll {
+  border: 1px solid lightgrey;
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  margin: 20px 45% 50px 45%;
+  font-family: "Poppins", sans-serif;
+}
+
+.selling {
+  display: inline-block;
+  background: #eba6aa;
+}
+
+.latest {
+  display: inline-block;
+  background: #88cce2;
+}
+
+.couch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+.couch .firstCouch {
+  max-width: 34%;
+}
+.couch .firstCouch img {
+  width: 100%;
+}
+.couch .firstCouch .saleText {
+  background-color: #fff;
+  color: #d7b89c;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 5px 10px;
+}
+.couch .firstCouch .salePercentage {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 10px;
+}
+.couch .firstCouch .shopNow {
+  color: #fff;
+  text-transform: capitalize;
+}
+.couch .sale {
+  display: inline-block;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-family: "Offside", cursive;
+  font-family: "Poppins", sans-serif;
+}
+.couch .secondCouch {
+  width: 70%;
+}
+.couch .secondCouch img {
+  width: 100%;
+}
+.couch .secondCouch p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.couch .secondCouch p span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.eliasCouch {
+  color: white;
+  position: relative;
+  bottom: 360px;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 20px;
+  font-family: "Barlow", sans-serif;
+  font-family: "Offside", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+.instagramShop {
+  color: #666;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: -5px 0 30px 0;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+.instagram .instaGallery {
+  width: 25%;
+}
+.instagram img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.instagram .instaGallery:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popupImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: grey;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popupImage span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popupImage img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainFooter {
+  background-color: #333;
+  color: white;
+  height: 100%;
+}
+
+.footerJuno {
+  background-color: #d7b89c;
+  height: 3vh;
+  text-align: center;
+}
+.footerJuno p {
+  padding: 2px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.footerJuno p a {
+  text-transform: none;
+}
+
+.footerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 0 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerTop .footerBrand {
+  width: 245px;
+}
+.footerTop .footerBrand p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+
+.footerColumn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  margin: 0 10px;
+}
+.footerColumn i {
+  width: 16px;
+  height: 16px;
+}
+
+.footerImage {
+  width: 6%;
+  height: 37px;
+  margin-right: 3px;
+}
+
+.footerImg {
+  width: 20px;
+  height: 16px;
+}
+
+.footerList {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+.footerList p {
+  padding: 0 10px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.contact ul,
+.profile ul {
+  padding: 0;
+}
+
+.aboutCompany {
+  padding-right: 10px;
+}
+
+.footerIcons a {
+  padding: 0;
+  padding-right: 10px;
+  color: white;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.newsLetter p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+.newsLetter input[type=text] {
+  background-color: #333;
+  color: white;
+  font-size: 12px;
+}
+
+.contactHeader {
+  background: url(../assets/contact-us.jpg);
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contactHeader h1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 20px 20%;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.error-hint {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+button[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.viewAll {
+  text-align: center;
+  margin: 20px;
+}
+
+.searchContainer {
+  background: white;
+  padding: 10px;
+}
+.searchContainer form {
+  width: 33%;
+  border: 1px solid purple;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.searchContainer form input {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.searchContainer form i {
+  padding-left: 10px;
+}
+
 .wrapperOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +800,14 @@ html {
 a {
   text-decoration: none;
   padding: 10px 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.searchBar {
+  padding: 0 20px;
+  color: black;
+  text-transform: uppercase;
 }
 
 nav a:hover, nav a:focus {
@@ -259,8 +822,18 @@ nav a:hover, nav a:focus {
 }
 
 .cartIcon {
-  margin: 20px 35px 0 0;
+  margin: 20px 55px 0 0;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .cartIconSup {
@@ -281,6 +854,122 @@ nav a:hover, nav a:focus {
   height: 2px;
   background-color: rgb(100, 100, 100);
   margin: 5px;
+}
+
+.addToCart {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  z-index: 1;
+  background-color: lightgray;
+}
+
+.addToCart.active {
+  right: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cartTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cartBox {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cartImage {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.detailBox {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cartProductTitle {
+  font-size: 1 rem;
+  text-transform: uppercase;
+}
+
+.cartPrice {
+  font-weight: 500;
+}
+
+.cartQuantity {
+  border: 1px solid lightgray;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid lightgrey;
+}
+
+.totalTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.totalPrice {
+  margin-left: 0.5rem;
+}
+
+.buyButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: none;
+  color: darkslategray;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background-color: olivedrab;
+}
+
+#cartClose {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -515,407 +1204,4 @@ nav a:hover, nav a:focus {
   .firstCouch {
     position: relative;
   }
-}
-header {
-  background: url(./../project-1-store-novas/novas-project/assets/home.jpg);
-  background-repeat: no-repeat;
-  height: 94vh;
-  background-size: cover;
-  padding-top: 10px;
-  position: relative;
-  background-position: center;
-}
-
-.headerContainer {
-  position: absolute;
-  top: 15%;
-  left: 15%;
-}
-
-h1 {
-  text-align: left;
-  font-weight: 500;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
-
-header p {
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5em;
-  margin: 0;
-  padding-top: 20px;
-}
-
-.imageSection ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 10px;
-}
-.imageSection ul li {
-  width: 100%;
-  margin: 10px;
-}
-.imageSection ul li img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.wrapper {
-  max-width: 1080px;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.thirdImage {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.secondImageImage {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-}
-
-.firstImage {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.positionOne,
-.positionTwo,
-.positionThree {
-  position: relative;
-  bottom: 31px;
-  background: white;
-  display: inline-block;
-}
-
-h2 {
-  text-align: center;
-  padding-top: 40px;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-}
-
-.shoppingGalleryOne {
-  --current-slide: 0;
-  /* we set position relative so absolute position works properly for the buttons */
-  position: relative;
-  overflow: hidden;
-  max-height: 50vh;
-}
-
-.carousel-button {
-  /* vertically centering the buttons */
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  /* basic styling */
-  padding: 0;
-  margin: 0.5rem;
-  border-radius: 50%;
-  background-color: #d7b89c;
-  border: #668;
-  font-size: 1.5rem;
-  cursor: pointer;
-  -webkit-transition: color 0.1s;
-  transition: color 0.1s;
-}
-
-.carousel-button:hover {
-  color: rgba(0, 0, 0, 0.5);
-  background-color: #88cce2;
-}
-
-.carousel-button_next {
-  /* The "next slide button" will be at the right */
-  right: 0;
-}
-
-.productSlides {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  max-height: 100%;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform: translateX(calc(-100% * var(--current-slide)));
-          transform: translateX(calc(-100% * var(--current-slide)));
-}
-
-.productSlide {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 50%;
-  text-align: center;
-}
-.productSlide img {
-  width: 50%;
-}
-
-/*.shoppingGalleryOne{
-    display:flex;
-    gap:8px;
-
-    img{
-            width: 100%;
-            height:auto;
-            object-fit: cover; 
-        }
-}*/
-/*.shoppingGalleryTwo{
-    display:flex;
-    gap: 8px;
-    padding-top:20px;
-
-    img{
-        width: 100%;
-        height:auto;
-        object-fit: cover; 
-    }
-}*/
-/*.product{
-    position: relative;
-}*/
-.cart {
-  width: 30px;
-  position: relative;
-  border: 0.5px solid lightgrey;
-  height: 30px;
-  bottom: 40px;
-  left: 480px;
-}
-.cart img {
-  width: 28px;
-}
-
-.secondSection .seeAll {
-  border: 1px solid lightgrey;
-  display: inline-block;
-  padding: 15px 10px 15px 10px;
-  margin: 20px 45% 50px 45%;
-  font-family: "Poppins", sans-serif;
-}
-
-.selling {
-  display: inline-block;
-  background: #eba6aa;
-}
-
-.latest {
-  display: inline-block;
-  background: #88cce2;
-}
-
-.couch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-.couch .firstCouch {
-  max-width: 34%;
-}
-.couch .firstCouch img {
-  width: 100%;
-}
-.couch .secondCouch {
-  width: 70%;
-}
-.couch .secondCouch img {
-  width: 100%;
-}
-
-.sale {
-  background: #d7b89c;
-  display: inline-block;
-  color: white;
-  font-family: "Barlow", sans-serif;
-  font-family: "Offside", cursive;
-  font-family: "Poppins", sans-serif;
-}
-
-.eliasCouch {
-  color: white;
-  position: relative;
-  bottom: 360px;
-  border: 1px solid white;
-  display: inline-block;
-  padding: 20px;
-  font-family: "Barlow", sans-serif;
-  font-family: "Offside", cursive;
-  font-family: "Poppins", sans-serif;
-}
-
-.instagramShop {
-  color: #666;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  padding: -5px 0 30px 0;
-}
-
-.instagram {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 20px;
-}
-.instagram .instaGallery {
-  width: 25%;
-}
-.instagram img {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-}
-
-.instagram .instaGallery:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.popupImage {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: grey;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  display: none;
-}
-
-.popupImage span {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 40px;
-  font-weight: bolder;
-  color: #fff;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.popupImage img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 5px solid #fff;
-  border-radius: 5px;
-  width: 750px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.footerTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.footerTop .footerBrand {
-  width: 245px;
-}
-
-.footerImage {
-  width: 6%;
-  height: 37px;
-  margin-right: 3px;
-}
-
-.footerImg {
-  width: 20px;
-  height: 16px;
-}
-
-.footerList {
-  list-style-type: none;
-}
-
-.contact ul,
-.profile ul {
-  padding: 0;
-}
-
-.aboutCompany {
-  padding-right: 10px;
-}
-
-.footerIcons a {
-  padding: 0;
-  padding-right: 10px;
-}
-
-h3 {
-  margin-top: 0;
-}
-
-.contactHeader {
-  background: url(./../project-1-store-novas/novas-project/assets/contact-us.jpg);
-  height: 70vh;
-  padding: 158px 0px 0px 145px;
-  background-position: center;
-}
-
-.container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 60%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 20px 20px 20%;
-}
-
-input[type=text], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-right-style: hidden;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-.error-hint {
-  color: red;
-}
-
-.hidden {
-  display: none;
-}
-
-button[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
