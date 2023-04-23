@@ -942,7 +942,7 @@ img {
 
 .allProductsList form {
   width: 80%;
-  border: 1px solid purple;
+  border: solid 2px #f8f8f8;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
