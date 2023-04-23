@@ -1,8 +1,8 @@
 @use "./variables" as *;
 
-    body {
-        overflow-x: hidden;
-    }
+    // body {
+    //     overflow-x: hidden;
+    // }
         // Header section style
         header{
             background: url(../assets/home.jpg);
@@ -544,35 +544,4 @@
 
 
 
-        // NEW PAGE RPODUUCTS
-
-        // OUR PRODUCTS/SHOP SECTION
-
-        .viewAll {
-            text-align: center;
-            margin: 20px;;
-          }
-          
-          .searchContainer {
-            background: white;
-            padding: 10px;
-            form {
-                width: 33%;
-                border: 1px solid purple;
-                border-radius: 4px;
-                display: flex;
-                align-items: center;
-                input {
-                    border: none;
-                    outline: none;
-                    box-shadow: none;
-                    margin: 0;
-                    font-size: 16px;
-                    font-weight: 600;
-                }
-                i {
-                    padding-left: 10px;
-                }
-
-            }
-          }
+       

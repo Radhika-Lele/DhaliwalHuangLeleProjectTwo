@@ -230,10 +230,6 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 header {
   background: url(../assets/home.jpg);
   background-repeat: no-repeat;
@@ -748,39 +744,6 @@ button[type=submit] {
   cursor: pointer;
 }
 
-.viewAll {
-  text-align: center;
-  margin: 20px;
-}
-
-.searchContainer {
-  background: white;
-  padding: 10px;
-}
-.searchContainer form {
-  width: 33%;
-  border: 1px solid purple;
-  border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.searchContainer form input {
-  border: none;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-.searchContainer form i {
-  padding-left: 10px;
-}
-
 .wrapperOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,6 +935,42 @@ nav a:hover, nav a:focus {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.allProductsList form {
+  width: 33%;
+  border: 1px solid purple;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.allProductsList form input {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.allProductsList form i {
+  padding-left: 10px;
+}
+.allProductsList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media (max-width: 700px) {
   .menu {
     position: absolute;
