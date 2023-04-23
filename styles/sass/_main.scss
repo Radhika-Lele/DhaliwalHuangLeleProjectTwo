@@ -117,7 +117,7 @@
           
             /* basic styling */
             padding: 0;
-            margin: 0.5rem;
+            margin: 20px;
             border-radius: 50%;
             background-color :#d7b89c;
             border:#668;
@@ -126,8 +126,12 @@
             transition: color 0.1s;
 
             p {
-                padding: 0 5px;
+                padding: 0 8px;
                 margin: 8px 5px;
+            
+                i {
+                    color: #fff;
+                }
             }
           }
           
@@ -275,6 +279,7 @@
         .couch{
             display: flex;
             text-align: center;
+            margin-top: 70px;
             // position: relative;
             
             .firstCouch{

@@ -5,18 +5,21 @@
 // Step 1: set up firebase
 
 import app from "./firebase.js";
-import {getDatabase, ref, push, set, onValue} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import {getDatabase, ref, push, set, get, onValue} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 
 // First, we connect to the Realtime DB service in our firebase project's back end: 
 const database = getDatabase(app);
-const dbRef = ref(database);
+// const dbRef = ref(database);
 
 // Next, we create a reference to point to our database:
 const inventoryRef = ref(database, '/inventory');
 console.log(inventoryRef);
 
 // console.log(inventoryRef);
+
+// reference to our favourites in our database
+const favRef = ref(database, '/favourites');
 
 // push( inventoryRef, "Hello World!");
 
@@ -263,12 +266,15 @@ function addEvents(){
     let addCartButtons = document.querySelectorAll('.addCart');
     addCartButtons.forEach( (button) =>{
         button.addEventListener('click', handleAddCartItem);
+        // console.log("this", this);
     });
 
     //Buy Order
     const buyButton = document.querySelector('.buyButton');
     buyButton.addEventListener('click', handleBuyOrder);
+    // console.log('click click');
 } 
+
 // HANDLE EVENTS FUNCTIONS
 let itemsAdded = [];
 
@@ -410,3 +416,85 @@ function cartBoxComponent(title,price,imgSrc){
 //  retrieve the furniture data from firebase and display it on our account.html page - append it to the ul already created in our html file
 // append it to div already created in our account.html file
 
+
+// global variables
+// const ulElement = document.querySelector('.wishlistItems');
+
+// console.log(ulElement);
+
+// const iconElement = document.querySelector('.wishlistIcon');
+
+// adding items to our favourites
+
+// iconElement.addEventListener('click', (event) => {
+//     // console.log('click');
+//     console.log('click');
+
+//     if(event.target.tagName === 'I') {
+//         console.log(event.target);
+//         // pass the id attribute value as an argument to our addToFavs function
+//         addToFavs(event.target);
+//     }
+// });
+
+// this function handles adding animals to our favourites section
+
+// const addToFavs = (selectedItem) => {
+
+//     const chosenRef = ref(database, `/inventory/${selectedItem}`);
+//     console.log(chosenRef);
+
+//     get(chosenRef)
+//     .then((snapshot) => {
+//       // console.log(snapshot.val());
+
+//       // this new object will have some of the properties of the original animal object
+//       const inventoryData = snapshot.val()
+//       // console.log(animalData);
+
+//       // create a new object that represents our favourited animal
+//       const favItem = {
+//         alt: inventoryData.title,
+//         imgUrl: inventoryData.url,
+//         id: inventoryData.title,
+//       }
+
+//       // creating a new object that set the isFavourited property to true
+//       const favState = {
+//         isFavourited: true
+//       };
+      
+//       update(chosenRef, favState);
+
+//       // console.log(favAnimal);
+//       push(favRef, favItem)
+//     })
+// }
+
+// import "../styles/style.css";
+
+// function addWishlist() {
+//     console.log('add item to wishlist');
+// }
+
+// function removeWishlist() {
+//     console.log('remove item from wishlist');
+// }
+
+const wishlistIcon = document.querySelectorAll('.fa-heart');
+
+wishlistIcon.forEach((icon) => {
+
+    icon.addEventListener('click', function () {
+        // console.log("this", this);
+    
+        if(this.classList.contains('active')) {
+            // removeWishlist();
+            this.classList.remove('active', 'fa-solid');
+    
+        } else {
+            this.classList.add('active', 'fa-solid');
+            // addWishlist();
+        };
+    });
+})
