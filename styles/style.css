@@ -941,7 +941,7 @@ img {
 }
 
 .allProductsList form {
-  width: 33%;
+  width: 80%;
   border: 1px solid purple;
   border-radius: 4px;
   display: -webkit-box;
@@ -950,8 +950,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px auto;
 }
 .allProductsList form input {
+  width: 100%;
   border: none;
   outline: none;
   -webkit-box-shadow: none;
@@ -959,6 +961,7 @@ img {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
+  padding: 5px;
 }
 .allProductsList form i {
   padding-left: 10px;
@@ -967,10 +970,32 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style-type: none;
 }
+.allProductsList ul li {
+  width: calc(20% - 20px);
+  margin: 10px;
+  border: solid 2px #f8f8f8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.allProductsList ul h4 {
+  margin-left: 10px;
+}
+.allProductsList ul p {
+  margin-left: 10px;
+}
+.allProductsList ul p:before {
+  content: "$";
+}
+
 @media (max-width: 700px) {
   .menu {
     position: absolute;

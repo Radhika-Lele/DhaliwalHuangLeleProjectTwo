@@ -32,16 +32,15 @@ onValue(inventoryRef, (firebaseData) => {
         const priceElement = document.createElement("p")
         priceElement.innerText = productPrice
         
-        listItem.append(titleElement, imageElement, priceElement);
-        ulElement.append(listItem);
-        
+        listItem.append(imageElement, titleElement, priceElement);
+        ulElement.append(listItem); 
     }
+
     const productElements = document.querySelectorAll("#productContainer li")
     const searchInput = document.querySelector("[data-search]");
     
     searchInput.addEventListener("input", () => {
         const searchValue = searchInput.value.toLowerCase();
-        console.log(productElements);
         productElements.forEach((product) => {
             const title = product.querySelector("h4").innerText.toLowerCase();
             if (title.includes(searchValue)) {

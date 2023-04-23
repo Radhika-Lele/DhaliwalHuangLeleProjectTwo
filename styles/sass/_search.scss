@@ -7,18 +7,21 @@ img {
 
 .allProductsList {
     form {
-        width: 33%;
+        width: 80%;
         border: 1px solid purple;
         border-radius: 4px;
         display: flex;
         align-items: center;
+        margin: 20px auto;
         input {
+            width: 100%;
             border: none;
             outline: none;
             box-shadow: none;
             margin: 0;
             font-size: 16px;
             font-weight: 600;
+            padding: 5px;
         }
         i {
             padding-left: 10px;
@@ -26,9 +29,23 @@ img {
     }
     ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        list-style-type: none;
         li {
-            
+            width: calc(20% - 20px);
+            margin: 10px;
+            border: solid 2px #f8f8f8;
+            flex-direction: column;
+        }
+        h4 {
+            margin-left: 10px;
+        }
+        p {
+            margin-left: 10px;
+        }
+        p:before {
+            content: "$";
         }
     }
 }
