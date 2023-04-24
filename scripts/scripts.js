@@ -5,18 +5,21 @@
 // Step 1: set up firebase
 
 import app from "./firebase.js";
-import {getDatabase, ref, push, set, onValue} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import {getDatabase, ref, push, set, get, onValue} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 
 // First, we connect to the Realtime DB service in our firebase project's back end: 
 const database = getDatabase(app);
-const dbRef = ref(database);
+// const dbRef = ref(database);
 
 // Next, we create a reference to point to our database:
 const inventoryRef = ref(database, '/inventory');
 console.log(inventoryRef);
 
 // console.log(inventoryRef);
+
+// reference to our favourites in our database
+const favRef = ref(database, '/favourites');
 
 // push( inventoryRef, "Hello World!");
 
@@ -344,7 +347,8 @@ function updateTotal() {
     cartBoxes.forEach((cartBox) => {
        let priceElement = cartBox.querySelector('.cartPrice');
        let price = parseFloat(priceElement.innerHTML.replace('$', ''));
-       let quantity = cartBox.querySelector('.cartQuantity').value;
+       let quantity = parseInt(
+       cartBox.querySelector('.cartQuantity').value);
        total += price * quantity;
        total_qty += quantity;
     });
@@ -354,8 +358,7 @@ function updateTotal() {
     // //or you can also
     // total = Math.round(total * 100) / 100;
     totalElement.innerHTML = '$' + total;
-    // cartCountElement.innerHTML = "";
-    cartCountElement.innerHTML = total_qty;  
+    cartCountElement.innerHTML = total_qty;
 }
 
 // HTML COMPONENTS
@@ -398,3 +401,27 @@ function cartBoxComponent(title,price,imgSrc){
 //     const searchText = searchInput.value;
     
 // })
+
+
+
+
+// --------- WISH LIST -----------
+
+
+const wishlistIcon = document.querySelectorAll('.fa-heart');
+
+wishlistIcon.forEach((icon) => {
+
+    icon.addEventListener('click', function () {
+        // console.log("this", this);
+    
+        if(this.classList.contains('active')) {
+            // removeWishlist();
+            this.classList.remove('active', 'fa-solid');
+    
+        } else {
+            this.classList.add('active', 'fa-solid');
+            // addWishlist();
+        };
+    });
+})
