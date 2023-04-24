@@ -37,7 +37,7 @@
     },
     "item6": {
       "title" : "Pillow",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-6.jpg",
+      "url" : "./assets/prod-6.jpg",
       "price": 30,
       "symbol": "$",
       "stock": 10
@@ -58,14 +58,14 @@
     },
     "item9": {
       "title" : "Candle",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-9.jpg",
+      "url" : "./assets/prod-9.jpg",
       "price": 22,
       "symbol": "$",
       "stock": 13
     },
     "item10": {
       "title" : "Succulent Light",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-10.jpg",
+      "url" : "./assets/prod-10.jpg",
       "price": 29,
       "symbol": "$",
       "stock": 4

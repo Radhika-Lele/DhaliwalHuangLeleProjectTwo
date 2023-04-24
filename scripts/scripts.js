@@ -266,15 +266,12 @@ function addEvents(){
     let addCartButtons = document.querySelectorAll('.addCart');
     addCartButtons.forEach( (button) =>{
         button.addEventListener('click', handleAddCartItem);
-        // console.log("this", this);
     });
 
     //Buy Order
     const buyButton = document.querySelector('.buyButton');
     buyButton.addEventListener('click', handleBuyOrder);
-    // console.log('click click');
 } 
-
 // HANDLE EVENTS FUNCTIONS
 let itemsAdded = [];
 
@@ -350,7 +347,8 @@ function updateTotal() {
     cartBoxes.forEach((cartBox) => {
        let priceElement = cartBox.querySelector('.cartPrice');
        let price = parseFloat(priceElement.innerHTML.replace('$', ''));
-       let quantity = cartBox.querySelector('.cartQuantity').value;
+       let quantity = parseInt(
+       cartBox.querySelector('.cartQuantity').value);
        total += price * quantity;
        total_qty += quantity;
     });
@@ -360,8 +358,7 @@ function updateTotal() {
     // //or you can also
     // total = Math.round(total * 100) / 100;
     totalElement.innerHTML = '$' + total;
-    // cartCountElement.innerHTML = "";
-    cartCountElement.innerHTML = total_qty;  
+    cartCountElement.innerHTML = total_qty;
 }
 
 // HTML COMPONENTS
