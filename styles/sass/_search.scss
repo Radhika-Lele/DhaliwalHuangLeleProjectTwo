@@ -1,11 +1,15 @@
 @use "./variables" as *;
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 .allProductsList {
+    min-height: 800px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     form {
         width: 80%;
         border: solid 2px #f8f8f8;

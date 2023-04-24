@@ -99,6 +99,10 @@
             font-size: 30px;
         }
 
+        .viewAll {
+            text-align: center;
+        }
+
         .shoppingGalleryOne {
             --current-slide: 0;
             /* we set position relative so absolute position works properly for the buttons */
@@ -125,9 +129,17 @@
             cursor: pointer;
             transition: color 0.1s;
 
+            // p {
+            //     padding: 0 5px;
+            //     margin: 8px 5px;
+            // }
             p {
-                padding: 0 5px;
+                padding: 0 8px;
                 margin: 8px 5px;
+            
+                i {
+                    color: #fff;
+                }
             }
           }
           
@@ -167,9 +179,10 @@
         *.shoppingGalleryOne{
             display:flex;
             gap:8px;
+            // padding-top:20px;
             
             img{
-                    width: 100%;
+                    // width: 100%;
                     height:auto;
                     object-fit: cover; 
                 }
@@ -182,7 +195,7 @@
             padding-top:20px;
             
             img{
-                width: 100%;
+                // width: 100%;
                 height:auto;
                 object-fit: cover; 
             }
@@ -202,6 +215,25 @@
                 width: 28px;
                }
         }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            
+            img {
+                cursor: pointer;
+                width: fit-content;
+            }
+
+            .fa-heart {
+                size: 10px;
+                cursor: pointer;
+            }
+        }
+
         .secondSection .seeAll{
             border : 1px solid   $color-secondary;
             display: inline-block;
@@ -213,10 +245,18 @@
         .selling{
             display: inline-block;
             background: #eba6aa;
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            padding: 10px;
         }
         .latest{
             display: inline-block;
             background: #88cce2 ;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            padding: 10px;
         }
         // .direction{
         //     text-align: center;
@@ -239,6 +279,7 @@
         .couch{
             display: flex;
             text-align: center;
+            margin-top: 70px;
             // position: relative;
             
             .firstCouch{
@@ -285,6 +326,13 @@
                 width:70%;
                 // padding-right: 120px;
                 // position: absolute;
+                // background: url(../assets/vert2.jpg);
+                // width: 50%;
+                // background-size: contain;
+                // height: 50vh;
+                // background-repeat: no-repeat;
+                // display: flex;
+                // justify-content: center;
 
                 img {
                     width: 100%;
@@ -313,6 +361,10 @@
             font-family:  $bottomFont;
             font-family: $upFont;
             font-family: $myFont;
+
+            // margin: 20px 30px;
+            // text-align: center;
+            // height: fit-content;
         }
 
 
