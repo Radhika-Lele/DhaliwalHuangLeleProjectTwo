@@ -350,7 +350,7 @@ h2 {
   z-index: 1;
   /* basic styling */
   padding: 0;
-  margin: 0.5rem;
+  margin: 20px;
   border-radius: 50%;
   background-color: #d7b89c;
   border: #668;
@@ -360,8 +360,11 @@ h2 {
   transition: color 0.1s;
 }
 .carousel-button p {
-  padding: 0 5px;
+  padding: 0 8px;
   margin: 8px 5px;
+}
+.carousel-button p i {
+  color: #fff;
 }
 
 .carousel-button:hover {
@@ -407,7 +410,6 @@ h2 {
   gap: 8px;
 }
 *.shoppingGalleryOne img {
-  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -421,7 +423,6 @@ h2 {
   padding-top: 20px;
 }
 * *.shoppingGalleryTwo img {
-  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -441,6 +442,33 @@ h2 {
   width: 28px;
 }
 
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+.icons img {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.icons .fa-heart {
+  size: 10px;
+  cursor: pointer;
+}
+
 .secondSection .seeAll {
   border: 1px solid lightgrey;
   display: inline-block;
@@ -452,11 +480,19 @@ h2 {
 .selling {
   display: inline-block;
   background: #eba6aa;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  padding: 10px;
 }
 
 .latest {
   display: inline-block;
   background: #88cce2;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
 }
 
 .couch {
@@ -464,6 +500,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  margin-top: 70px;
 }
 .couch .firstCouch {
   max-width: 34%;
@@ -659,6 +696,13 @@ h2 {
   font-weight: 300;
   cursor: pointer;
 }
+.footerList p a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
 
 .contact ul,
 .profile ul {
@@ -779,6 +823,19 @@ button[type=submit] {
 }
 .searchContainer form i {
   padding-left: 10px;
+}
+
+.wishlist {
+  margin: 20px;
+}
+.wishlist h1 {
+  text-align: center;
+}
+
+.wishlistContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrapperOne {
