@@ -30,43 +30,46 @@
 
     <body>
         <!-- Navigation Bar -->
-        <div class="wrapperOne">
-            <div class="logo">
-                <img src="./assets/logo-black.png" alt="novas logo">
-            </div>
-            <!--input id="menuButton" type="checkbox"/>
-                <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label-->
-            <nav>
-                <ul class="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html" target="_blank">Contact Us</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+    <div class="wrapperOne">
+        <div class="logo">
+            <img src="./assets/logo-black.png" alt="novas logo">
+        </div>
+        <!-- <input id="menuButton" type="checkbox"/>
+        <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label> -->
 
-            </nav>
-            <div class="cartIcon">
-                <img src="./assets/icons/shopping-cart-black-icon.png" id="iconOfCart"
-                    alt="shopping cart" />
-                <!-- <a href="#"><i class="fa
-                fa-bag-shopping"></i></a> -->
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
+        </nav>
+
+        <div class="cartIcon">
+            <img src="./assets/icons/shopping-cart-black-icon.png"
+                alt="shopping cart"><sup class="cartIconSup">2</sup>
+        </div>
+    </div>
 
 <!-- Featured Sale Section --> 
 
-<section id="shop" class="wrapper">
-    <div class="searchContainer">
-        <form>
-            <i class="fas fa-search"></i>
-            <input type="text" id="searchBar" placeholder="Search products" onkeyup="search()">
-        </form>
-    </div>
-    <ul id="productContainer"></ul>
-</section>
+        <section id="shop" class="wrapper">
+            <div class="allProductsList">
+                
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="search" id="search" placeholder="Search products" data-search>
+                </form>
+                
+                <ul id="productContainer"></ul>
+            </div>
+            
+        </section>
 
         <!-- Footer Section -->
         <footer class="mainFooter">

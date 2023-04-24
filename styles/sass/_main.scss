@@ -1,8 +1,8 @@
 @use "./variables" as *;
 
-    body {
-        overflow-x: hidden;
-    }
+    // body {
+    //     overflow-x: hidden;
+    // }
         // Header section style
         header{
             background: url(../assets/home.jpg);
@@ -117,7 +117,7 @@
           
             /* basic styling */
             padding: 0;
-            margin: 20px;
+            margin: 0.5rem;
             border-radius: 50%;
             background-color :#d7b89c;
             border:#668;
@@ -126,12 +126,8 @@
             transition: color 0.1s;
 
             p {
-                padding: 0 8px;
+                padding: 0 5px;
                 margin: 8px 5px;
-            
-                i {
-                    color: #fff;
-                }
             }
           }
           
@@ -171,10 +167,9 @@
         *.shoppingGalleryOne{
             display:flex;
             gap:8px;
-            // padding-top:20px;
             
             img{
-                    // width: 100%;
+                    width: 100%;
                     height:auto;
                     object-fit: cover; 
                 }
@@ -187,7 +182,7 @@
             padding-top:20px;
             
             img{
-                // width: 100%;
+                width: 100%;
                 height:auto;
                 object-fit: cover; 
             }
@@ -207,57 +202,22 @@
                 width: 28px;
                }
         }
-
-        .icons {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px;
-            
-            img {
-                cursor: pointer;
-                width: fit-content;
-            }
-
-            .fa-heart {
-                size: 10px;
-                cursor: pointer;
-            }
-        }
-
         .secondSection .seeAll{
             border : 1px solid   $color-secondary;
             display: inline-block;
             padding: 15px 10px 15px 10px;
             margin:20px 45% 50px 45%;
-            font-family:$myFont;
+            font-family: $myFont;
         }
 
         .selling{
             display: inline-block;
             background: #eba6aa;
-            position: fixed;
-            left: 20px;
-            top: 20px;
-            padding: 10px;
         }
         .latest{
             display: inline-block;
             background: #88cce2 ;
-            position: fixed;
-            right: 20px;
-            top: 20px;
-            padding: 10px;
         }
-
-        // .selling,
-        // .latest {
-        //     // position: relative;
-        //     // top: -220px;
-        //     // left: -29px;
-        //     padding: 10px 20px;
-        // }
         // .direction{
         //     text-align: center;
         // }
@@ -279,7 +239,6 @@
         .couch{
             display: flex;
             text-align: center;
-            margin-top: 70px;
             // position: relative;
             
             .firstCouch{
@@ -326,14 +285,6 @@
                 width:70%;
                 // padding-right: 120px;
                 // position: absolute;
-                // background: url(../assets/vert2.jpg);
-                // width: 50%;
-                // background-size: contain;
-                // height: 50vh;
-                // background-repeat: no-repeat;
-                // display: flex;
-                // justify-content: center;
-                
 
                 img {
                     width: 100%;
@@ -362,10 +313,6 @@
             font-family:  $bottomFont;
             font-family: $upFont;
             font-family: $myFont;
-
-            // margin: 20px 30px;
-            // text-align: center;
-            // height: fit-content;
         }
 
 
@@ -506,14 +453,6 @@
                 font-size: 13px;
                 font-weight: 300;
                 cursor: pointer;
-
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    padding: 0;
-                    margin: 0;
-                    text-transform: capitalize;
-                }
             }
         }
 
@@ -605,50 +544,4 @@
 
 
 
-        // NEW PAGE PRODUCTS
-
-        // OUR PRODUCTS/SHOP SECTION
-
-        .viewAll {
-            text-align: center;
-            margin: 20px;;
-          }
-          
-          .searchContainer {
-            background: white;
-            padding: 10px;
-            form {
-                width: 33%;
-                border: 1px solid purple;
-                border-radius: 4px;
-                display: flex;
-                align-items: center;
-                input {
-                    border: none;
-                    outline: none;
-                    box-shadow: none;
-                    margin: 0;
-                    font-size: 16px;
-                    font-weight: 600;
-                }
-                i {
-                    padding-left: 10px;
-                }
-
-            }
-          }
-
-// WISHLIST ITEM FROM ACCOUNT.HTML
-
-.wishlist {
-    margin: 20px;
-    
-    h1 {
-        text-align: center;
-    }
-}
-
-.wishlistContainer {
-    display: flex;
-    
-}
+       
