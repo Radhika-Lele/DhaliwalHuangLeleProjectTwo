@@ -53,6 +53,7 @@ onValue(inventoryRef, (firebaseData) => {
     }
 
     const productElements = document.querySelectorAll("#productContainer li")
+    const searchForm = document.querySelector("form")
     const searchInput = document.querySelector("[data-search]");
     
     searchInput.addEventListener("input", () => {
@@ -66,6 +67,9 @@ onValue(inventoryRef, (firebaseData) => {
          }
         });
     });
+    searchForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+});
 });
 
 // WISH LIST
