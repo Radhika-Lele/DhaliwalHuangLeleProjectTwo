@@ -31,6 +31,13 @@
                     .instaGallery{
                         flex : 1 0 27%;
                     }
+
+                    .productContainer ul li,
+                    .favContainer ul li{
+                        // flex-wrap: wrap;
+                        // flex : 1 0 27%;
+                        min-width: 100px;
+                    }
                 
                     .footerTop{
                         flex-wrap: wrap;

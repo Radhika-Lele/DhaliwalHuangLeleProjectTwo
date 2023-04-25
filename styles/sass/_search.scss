@@ -2,21 +2,22 @@
 
 
 
-.allProductsList {
+.allProductsList,
+.favItems {
     min-height: 800px;
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+    
+    // img {
+    //     max-width: 100%;
+    //     height: auto;
+    // }
 
     form {
         width: 80%;
-        border: solid 2px #f8f8f8;
+        border: solid 1px #b8b8b8;
         border-radius: 4px;
         display: flex;
         align-items: center;
-        margin: 20px auto;
+        margin: 30px auto;
         input {
             width: 100%;
             border: none;
@@ -24,32 +25,77 @@
             box-shadow: none;
             margin: 0;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 500;
             padding: 5px;
         }
         i {
             padding-left: 10px;
         }
     }
+
     ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         list-style-type: none;
+        padding-left: 0px;
+    
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    
         li {
             width: calc(20% - 20px);
             margin: 10px;
-            border: solid 2px #f8f8f8;
+            border: solid 1px #dbdbdb;
             flex-direction: column;
         }
+    
         h4 {
             margin-left: 10px;
+            font-weight: 500;
         }
+    
         p {
             margin-left: 10px;
         }
+    
         p:before {
             content: "$";
         }
+    
+        button {
+            // text-align: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            background: transparent;
+            border: 1px solid white;
+            color: lightgray;
+            line-height: 1.6;
+        }
+
+        button:disabled {
+            color: tomato;
+            cursor: auto;
+        }
+
+        button:hover:not([disabled]),
+        button:focus {
+            color: tomato;
+        }
+    }
+
+}
+
+.wishlist {
+    margin-top: 50px;
+
+    h2 {
+        margin-bottom: 40px;
     }
 }
+

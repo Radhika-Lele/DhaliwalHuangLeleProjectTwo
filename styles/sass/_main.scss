@@ -1,8 +1,8 @@
 @use "./variables" as *;
 
-    // body {
-    //     overflow-x: hidden;
-    // }
+    body {
+        overflow-x: hidden;
+    }
         // Header section style
         header{
             background: url(../assets/home.jpg);
@@ -101,6 +101,18 @@
 
         .viewAll {
             text-align: center;
+            margin-bottom: 20px;
+            
+        }
+
+        .viewAll a:hover, 
+        .viewAll a:focus{
+            border: 1px solid grey;
+            //border: 0 0 1px 0;
+            border-top-style: hidden;
+            border-left-style: hidden;
+            border-right-style: hidden;
+            font-weight: 500;
         }
 
         .shoppingGalleryOne {
@@ -226,6 +238,13 @@
             img {
                 cursor: pointer;
                 width: fit-content;
+                width: 100%;
+            }
+
+            img:hover,
+            img:focus {
+                background-color: rgba(215, 184, 157, 0.573);
+                border-radius: 20%;
             }
 
             .fa-heart {
@@ -258,22 +277,7 @@
             top: 20px;
             padding: 10px;
         }
-        // .direction{
-        //     text-align: center;
-        // }
-        // .direction button{
-        //     font-family: cursive;
-        //     font-weight: bold;
-        //     border:none;
-        //     width:50px;
-        //     height: 50px;
-        //     border-radius: 50%;
-        //     transition: 0.5s;
-        //     margin: 0 10px;
-        // }
-        // .direction button:hover{
-        //     background-color: #ffffff;
-        // }
+
 
         // Couch/sofa Section
         .couch{
@@ -281,90 +285,78 @@
             text-align: center;
             margin-top: 70px;
             // position: relative;
+        }
             
-            .firstCouch{
-                max-width:34%;
-                // position: absolute;
+        .firstCouch{
+            max-width:34%;
+            // position: absolute;
                 
-                img {
-                    width: 100%;
-                } 
+            img {
+                width: 100%;
+            } 
 
-                .saleText {
-                    background-color: #fff;
-                    color: #d7b89c;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    margin: 5px 10px;
-                }
-                .salePercentage {
-                    font-size: 2.5rem;
-                    font-weight: 600;
-                    color: #fff;
-                    margin: 10px;
-                }
-
-                .shopNow {
-                    color: #fff;
-                    text-transform: capitalize;
-                }
+            .saleText {
+                background-color: #fff;
+                color: #d7b89c;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin: 5px 10px;
+            }
+            .salePercentage {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: #fff;
+                margin: 10px;
             }
 
-            .sale{
-                // background: #d7b89c;
-                display: inline-block;
-                // position: relative;
-                // bottom: 200px;
-                color:  $color-primary;  
-                font-family:  $bottomFont;
-                font-family: $upFont;
-                font-family: $myFont;
-            }
-
-            
-            .secondCouch{
-                width:70%;
-                // padding-right: 120px;
-                // position: absolute;
-                // background: url(../assets/vert2.jpg);
-                // width: 50%;
-                // background-size: contain;
-                // height: 50vh;
-                // background-repeat: no-repeat;
-                // display: flex;
-                // justify-content: center;
-
-                img {
-                    width: 100%;
-                    // height: 392px;
-                }
-
-                p {
-                    font-size: 1.2rem;
-                    margin: 0;
-                
-                    span {
-                        font-size: 2rem;
-                        font-weight: 600;
-                    }
-                }
-                
+            .shopNow {
+                color: #fff;
+                text-transform: capitalize;
             }
         }
-        .eliasCouch{
-            color: $color-primary;
-            position: relative;
-            bottom:360px;
-            border : 1px solid  $color-primary;
+
+        .sale{
             display: inline-block;
-            padding: 20px;
+            color:  $color-primary;  
             font-family:  $bottomFont;
             font-family: $upFont;
             font-family: $myFont;
+        }
 
-            // margin: 20px 30px;
-            // text-align: center;
-            // height: fit-content;
+
+        .secondCouch{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:70%;
+            // padding-right: 120px;
+            // position: absolute;
+
+            img {
+                width: 100%;
+                // height: 392px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+                
+                span {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+                
+        }
+        
+        .eliasCouch{
+            color: $color-primary;
+            border : 1px solid  $color-primary;
+            padding: 20px;
+            font-family: $bottomFont;
+            font-family: $upFont;
+            font-family: $myFont;
+            margin-top: -250px;
         }
 
 
@@ -427,11 +419,6 @@
 
         //  Footer section
 
-        // footer {
-        //     // height: 50vh;
-        //     // background-color: #333;
-        //     // color: white;
-        // }
         .mainFooter {
             background-color: #333;
             color: white;
@@ -505,6 +492,14 @@
                 font-size: 13px;
                 font-weight: 300;
                 cursor: pointer;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 0;
+                    margin: 0;
+                    text-transform: capitalize;
+                }
             }
         }
 
@@ -560,6 +555,7 @@
             width: 60%;
             align-items: center;
             padding: 20px 20px 20px 20%;
+            min-height: 400px;
         }
 
         input[type=text], textarea {
@@ -583,8 +579,9 @@
         .hidden{
         display: none;
         }
+
         button[type=submit] {
-            background-color: #04AA6D;
+            background-color: #84a7b9;
             color: $color-primary;
             padding: 12px 20px;
             border: none;
