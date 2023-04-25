@@ -1,73 +1,94 @@
 {
   "inventory": {
     "item1": {
-      "title" : "Maal Chair",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-1.jpg",
-      "price": 22,
+      "title" : "Malm Chair",
+      "id": "01",
+      "url" : "./assets/prod-1.jpg",
+      "price": 50,
       "symbol": "$",
+      "favorited": false,
       "stock": 3
+      
     },
     "item2": {
-      "title" : "Pendant lamp",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-2.jpg",
-      "price": 45,
+      "title" : "Side Table",
+      "id": "02",
+      "url" : "./assets/prod-2.jpg",
+      "price": 80,
       "symbol": "$",
+      "favorited": false,
       "stock": 4
     },
     "item3": {
       "title" : "Magnolia dream",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-3.jpg",
-      "price": 18,
+      "id": "03",
+      "url" : "./assets/prod-3.jpg",
+      "price": 120,
       "symbol": "$",
+      "favorited": false,
       "stock": 5
     },
     "item4": {
       "title" : "Malm Chair",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-4.jpg",
-      "price": 45,
+      "id": "04",
+      "url" : "./assets/prod-4.jpg",
+      "price": 50,
       "symbol": "$",
+      "favorited": false,
       "stock": 4
     },
     "item5": {
-      "title" : "Malm Chair",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-5.jpg",
+      "title" : "Pendant Lamp",
+      "id": "05",
+      "url" : "./assets/prod-5.jpg",
       "price": 45,
       "symbol": "$",
-      "stock": 4
+      "favorited": false,
+      "stock": 6
     },
     "item6": {
-      "title" : "pendant lamp",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-6.jpg",
-      "price": 45,
+      "title" : "Pillow",
+      "id": "06",
+      "url" : "./assets/prod-6.jpg",
+      "price": 30,
       "symbol": "$",
-      "stock": 2
+      "favorited": false,
+      "stock": 10
     },
     "item7": {
-      "title" : "lorem ipsum",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-7.jpg",
-      "price": 45,
+      "title" : "Large Rug",
+      "id": "07",
+      "url" : "./assets/prod-7.jpg",
+      "price": 100,
       "symbol": "$",
-      "stock": 4
+      "favorited": false,
+      "stock": 7
     },
     "item8": {
-      "title" : "pendant lamp",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-8.jpg",
-      "price": 45,
+      "title" : "Wooden Chair",
+      "id": "08",
+      "url" : "./assets/prod-8.jpg",
+      "price": 110,
       "symbol": "$",
+      "favorited": false,
       "stock": 4
     },
     "item9": {
-      "title" : "lorem ipsum",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-9.jpg",
-      "price": 45,
+      "title" : "Candle",
+      "id": "09",
+      "url" : "./assets/prod-9.jpg",
+      "price": 22,
       "symbol": "$",
-      "stock": 4
+      "favorited": false,
+      "stock": 13
     },
     "item10": {
-      "title" : "pendant lamp",
-      "url" : "./project-1-store-novas/novas-project/assets/prod-10.jpg",
-      "price": 45,
+      "title" : "Succulent Light",
+      "id": "10",
+      "url" : "./assets/prod-10.jpg",
+      "price": 29,
       "symbol": "$",
+      "favorited": false,
       "stock": 4
     }
   }

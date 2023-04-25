@@ -150,12 +150,13 @@
     padding: none;
     color : darkslategray ;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     cursor:pointer; 
 }
 
-.buyButton:hover{
-    background-color: olivedrab;
+.buyButton:hover,
+.buyButton:focus {
+    background-color: #93b6af ;
 }
 
 #cartClose{

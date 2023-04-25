@@ -8,19 +8,6 @@
         <link rel="stylesheet" href="./styles/style.css">
         <title>Home | Novas</title>
 
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@500&display=swap"
-            rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins&display=swap"
-            rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Offside&family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
         <script src="https://kit.fontawesome.com/60d37f1f0e.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,13 +21,14 @@
             <div class="logo">
                 <img src="./assets/logo-black.png" alt="novas logo">
             </div>
-            <!--input id="menuButton" type="checkbox"/>
-                <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label-->
+            <!-- <input id="menuButton" type="checkbox"/>
+                <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label> -->
             <nav>
                 <ul class="menu">
                     <li><a href="./index.html">Home</a></li>
+                    <li><a href="./allProducts.html">Products</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
                 <div class="burger">
                     <div class="line1"></div>
@@ -141,10 +129,10 @@
                 <div class="carousel-buttons">
                     <button class="carousel-button carousel-button_previous" type="button"
                         data-carousel-button_previous>
-                        <p>⇤</p>
+                        <p><i class="fa-solid fa-chevron-left"></i></p>
                     </button>
                     <button class="carousel-button carousel-button_next" type="button" data-carousel-button_next>
-                        <p>⇥</p>
+                        <p><i class="fa-solid fa-chevron-right"></i></p>
                     </button>
                 </div>
 
@@ -152,99 +140,197 @@
 
                     <div class="productSlide">
                         <div class="selling">Sale</div>
-                        <img src="./assets/prod-1.jpg"  alt="malm Chair" class="productImg">
-                        <div class="productTitle">Malm Chair</div>
-                        <div class="productPrice">22 $</div>
-                        <div class="cart">
-                            <img src="./assets/icons/shopping-cart-black-icon.png"
-                            alt="add to cart" class="addCart">
-                            <i class="fa-solid fa-heart"></i>
+                        <img src="./assets/prod-1.jpg"  alt="Malm Chair" class="productImg">
+                        <div class="productDescription">
+                            <div class="productTitle">Malm Chair</div>
+                            <div class="productPrice">50 $</div>
+                        </div>
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png"
+                                alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="productSlide">
-                        <img src="./assets/prod-2.jpg" alt="Pendant Lamp" class="productImg">
-                        <div class="productTitle">pendant lamp</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        <div class="latest">New</div>
+                        <img src="./assets/prod-2.jpg" alt="Side Table" class="productImg">
+
+                        <div class="productDescription">
+                            <div class="productTitle">Side Table</div>
+                            <div class="productPrice">80 $</div>
+                        </div>
+
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                         
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
+                    
 
                     <div class="productSlide">
-                        <div class="latest">New</div>
                         <img src="./assets/prod-3.jpg" alt="Magnolia Dream" class="productImg">
-                        <div class="productTitle">Magnolia dream</div>
-                        <div class="productPrice"> 18 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                 
+                        <div class="productDescription">
+                            <div class="productTitle">Magnolia Dream</div>
+                            <div class="productPrice">120 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                               
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="productSlide">
                         <img src="./assets/prod-4.jpg" alt="Malm Chair" class="productImg">
-                        <div class="productTitle">Malm Chair</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Malm Chair</div>
+                            <div class="productPrice">50 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="productSlide">
                         <img src="./assets/prod-5.jpg" alt="Pendant Lamp" class="productImg">
-                        <div class="productTitle">pendant lamp</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
-                    </div>
-                    <div class="productSlide">
-                        <img src="./assets/prod-6.jpg" alt="Candle" class="productImg">
-                        <div class="productTitle">Candle</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Pendant Lamp</div>
+                            <div class="productPrice">45 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="productSlide">
-                        <img src="./assets/prod-7.jpg" alt="lorem Ipsum" class="productImg">
-                        <div class="productTitle">lorem ipsum</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        <img src="./assets/prod-6.jpg" alt="Pillow" class="productImg">
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Pillow</div>
+                            <div class="productPrice">30 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productSlide">
+                        <img src="./assets/prod-7.jpg" alt="Large Rug" class="productImg">
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Large Rug</div>
+                            <div class="productPrice">100 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="productSlide">
                         <img src="./assets/prod-8.jpg" alt="Pendant Lamp" class="productImg">
-                        <div class="productTitle">pendant lamp</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Wooden Chair</div>
+                            <div class="productPrice">110 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="productSlide">
-                        <img src="./assets/prod-9.jpg" alt="Pendant Lamp" class="productImg">
-                        <div class="productTitle">pendant lamp</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        <img src="./assets/prod-9.jpg" alt="candle" class="productImg">
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Candle</div>
+                            <div class="productPrice">22 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="productSlide">
-                        <img src="./assets/prod-10.jpg" alt="pendant lamp" class="productImg">
-                        <div class="productTitle">pendant lamp</div>
-                        <div class="productPrice">45 $</div>
-                        <div class="cart"><img
-                                src="./assets/icons/shopping-cart-black-icon.png"
-                                alt="add to cart" class="addCart"></div>
+                        <img src="./assets/prod-10.jpg" alt="Succulent Light" class="productImg">
+                        
+                        <div class="productDescription">
+                            <div class="productTitle">Succulent Light</div>
+                            <div class="productPrice">39 $</div>
+                        </div>
+                        
+                        <div class="icons">
+                            <div class="addCart">
+                                <img src="./assets/icons/shopping-cart-black-icon.png" alt="add to cart" class="addCart">
+                            </div>
+                            <div class="wishlistIcon">
+                                
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br /><br />
+            
         </section>
 
 
@@ -271,7 +357,7 @@
 
         <!-- Follow Instagram Section -->
         <section class="wrapper">
-            <h2>Follow Instagram</h2>
+            <h2>Follow Our Instagram</h2>
             <div class="instagramShop">@Novas_shop</div>
             <div class="instagram">
                 <div class="instaGallery"><img src="./assets/ig4.jpg" alt="closet">
@@ -352,7 +438,7 @@
                         <ul>
                             <li class="footerList">
                                 <i class="fa-regular fa-user"></i>
-                                <p>My Account</p>
+                                <p><a href="allProducts.html#wishlist">My Account</a></p>
                             </li>
 
                             <li class="footerList">
@@ -392,6 +478,6 @@
         </footer>
 
     <script src="./scripts/scripts.js" type="module"></script>
-    </body>
 
+    </body>
     </html>

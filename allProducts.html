@@ -8,19 +8,6 @@
         <link rel="stylesheet" href="./styles/style.css">
         <title>All Products | Novas</title>
 
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@500&display=swap"
-            rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins&display=swap"
-            rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Offside&family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
         <script src="https://kit.fontawesome.com/60d37f1f0e.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,44 +16,69 @@
     </head>
 
     <body>
+    
         <!-- Navigation Bar -->
-        <div class="wrapperOne">
-            <div class="logo">
-                <img src="./assets/logo-black.png" alt="novas logo">
+    <div class="wrapperOne">
+        <div class="logo">
+            <img src="./assets/logo-black.png" alt="novas logo">
+        </div>
+        <!-- <input id="menuButton" type="checkbox"/>
+        <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label> -->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./allProducts.html">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <!--input id="menuButton" type="checkbox"/>
-                <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./assets/icons/hamburger.png" alt="Navigation Menu"></label-->
-            <nav>
-                <ul class="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html" target="_blank">Contact Us</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+        </nav>
 
-            </nav>
-            <div class="cartIcon">
-                <img src="./assets/icons/shopping-cart-black-icon.png" id="iconOfCart"
-                    alt="shopping cart" />
-                <!-- <a href="#"><i class="fa
-                fa-bag-shopping"></i></a> -->
-            </div>
-
-<!-- Featured Sale Section --> 
-
-<section id="shop" class="wrapper">
-    <div class="searchContainer">
-        <form>
-            <i class="fas fa-search"></i>
-            <input type="text" id="searchBar" placeholder="Search products" onkeyup="search()">
-        </form>
+        <div class="cartIcon">
+            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping cart">
+            <!-- <sup class="cartIconSup">2</sup> -->
+        </div>
     </div>
-    <ul id="productContainer"></ul>
-</section>
+
+    <!-- Header Section -->
+    <header class="contactHeader">
+        <div class="wrapper">
+            <div class="contactTitle">
+                <!-- <h1>Contact Us</h1> -->
+            </div>
+        </div>
+    </header>
+    <!-- Product Section --> 
+
+        <section id="shop" class="wrapper">
+            <div class="allProductsList">
+                <h2>Products</h2>
+                
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="search" id="search" placeholder="Search products" data-search>
+                </form>
+                
+                <ul id="productContainer" class="productContainer"></ul>
+            </div>
+            
+        </section>
+
+        <!-- Wishlist Section -->
+
+        <section class="wishlist wrapper" id="wishlist">
+            <div class="favItems">
+                <h2>My Wish List</h2>
+                <ul id="favContainer" class="favContainer">
+                    <!-- js -->
+                </ul>
+            </div>
+        </section>
 
         <!-- Footer Section -->
         <footer class="mainFooter">
@@ -131,7 +143,7 @@
                         <ul>
                             <li class="footerList">
                                 <i class="fa-regular fa-user"></i>
-                                <p>My Account</p>
+                                <p><a href="allProducts.html#wishlist">My Account</a></p>
                             </li>
 
                             <li class="footerList">
