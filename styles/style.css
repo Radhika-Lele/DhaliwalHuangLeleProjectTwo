@@ -326,15 +326,6 @@ header p {
   bottom: 31px;
   font-size: 14px;
 }
-.positionOne p,
-.positionTwo p,
-.positionThree p {
-  background: white;
-  padding: 5px 10px;
-  position: relative;
-  bottom: 31px;
-  font-size: 14px;
-}
 
 h2 {
   text-align: center;
@@ -343,13 +334,25 @@ h2 {
   font-size: 30px;
 }
 
+.viewAll {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.viewAll a:hover,
+.viewAll a:focus {
+  border: 1px solid grey;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  font-weight: 500;
+}
+
 .shoppingGalleryOne {
   --current-slide: 0;
   /* we set position relative so absolute position works properly for the buttons */
   position: relative;
   overflow: hidden;
-  max-height: 100vh;
-  margin-bottom: 30px;
   max-height: 100vh;
   margin-bottom: 30px;
 }
@@ -361,7 +364,7 @@ h2 {
   z-index: 1;
   /* basic styling */
   padding: 0;
-  margin: 20px;
+  margin: 0.5rem;
   border-radius: 50%;
   background-color: #d7b89c;
   border: #668;
@@ -474,6 +477,12 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  width: 100%;
+}
+.icons img:hover,
+.icons img:focus {
+  background-color: rgba(215, 184, 157, 0.573);
+  border-radius: 20%;
 }
 .icons .fa-heart {
   size: 10px;
@@ -513,61 +522,72 @@ h2 {
   text-align: center;
   margin-top: 70px;
 }
-.couch .firstCouch {
+
+.firstCouch {
   max-width: 34%;
 }
-.couch .firstCouch img {
+.firstCouch img {
   width: 100%;
 }
-.couch .firstCouch .saleText {
+.firstCouch .saleText {
   background-color: #fff;
   color: #d7b89c;
   text-transform: uppercase;
   font-weight: 500;
   margin: 5px 10px;
 }
-.couch .firstCouch .salePercentage {
+.firstCouch .salePercentage {
   font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
   margin: 10px;
 }
-.couch .firstCouch .shopNow {
+.firstCouch .shopNow {
   color: #fff;
   text-transform: capitalize;
 }
-.couch .sale {
+
+.sale {
   display: inline-block;
   color: white;
   font-family: "Barlow", sans-serif;
   font-family: "Offside", cursive;
   font-family: "Poppins", sans-serif;
 }
-.couch .secondCouch {
+
+.secondCouch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70%;
 }
-.couch .secondCouch img {
+.secondCouch img {
   width: 100%;
 }
-.couch .secondCouch p {
+.secondCouch p {
   font-size: 1.2rem;
   margin: 0;
 }
-.couch .secondCouch p span {
+.secondCouch p span {
   font-size: 2rem;
   font-weight: 600;
 }
 
 .eliasCouch {
   color: white;
-  position: relative;
-  bottom: 360px;
   border: 1px solid white;
-  display: inline-block;
   padding: 20px;
   font-family: "Barlow", sans-serif;
   font-family: "Offside", cursive;
   font-family: "Poppins", sans-serif;
+  margin-top: -250px;
 }
 
 .instagramShop {
@@ -769,6 +789,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 20px 20px 20%;
+  min-height: 400px;
 }
 
 input[type=text], textarea {
@@ -795,7 +816,7 @@ input[type=text], textarea {
 }
 
 button[type=submit] {
-  background-color: #04AA6D;
+  background-color: #84a7b9;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -978,12 +999,13 @@ nav a:hover, nav a:focus {
   padding: none;
   color: darkslategray;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
 }
 
-.buyButton:hover {
-  background-color: olivedrab;
+.buyButton:hover,
+.buyButton:focus {
+  background-color: #93b6af;
 }
 
 #cartClose {
@@ -994,14 +1016,14 @@ nav a:hover, nav a:focus {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.allProductsList,
+.favItems {
+  min-height: 800px;
 }
-
-.allProductsList form {
+.allProductsList form,
+.favItems form {
   width: 80%;
-  border: solid 2px #f8f8f8;
+  border: solid 1px #b8b8b8;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,9 +1031,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px auto;
+  margin: 30px auto;
 }
-.allProductsList form input {
+.allProductsList form input,
+.favItems form input {
   width: 100%;
   border: none;
   outline: none;
@@ -1019,13 +1042,15 @@ img {
           box-shadow: none;
   margin: 0;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 5px;
 }
-.allProductsList form i {
+.allProductsList form i,
+.favItems form i {
   padding-left: 10px;
 }
-.allProductsList ul {
+.allProductsList ul,
+.favItems ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,24 +1060,65 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   list-style-type: none;
+  padding-left: 0px;
 }
-.allProductsList ul li {
+.allProductsList ul img,
+.favItems ul img {
+  max-width: 100%;
+  height: auto;
+}
+.allProductsList ul li,
+.favItems ul li {
   width: calc(20% - 20px);
   margin: 10px;
-  border: solid 2px #f8f8f8;
+  border: solid 1px #dbdbdb;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.allProductsList ul h4 {
+.allProductsList ul h4,
+.favItems ul h4 {
+  margin-left: 10px;
+  font-weight: 500;
+}
+.allProductsList ul p,
+.favItems ul p {
   margin-left: 10px;
 }
-.allProductsList ul p {
-  margin-left: 10px;
-}
-.allProductsList ul p:before {
+.allProductsList ul p:before,
+.favItems ul p:before {
   content: "$";
+}
+.allProductsList ul button,
+.favItems ul button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  background: transparent;
+  border: 1px solid white;
+  color: lightgray;
+  line-height: 1.6;
+}
+.allProductsList ul button:disabled,
+.favItems ul button:disabled {
+  color: tomato;
+  cursor: auto;
+}
+.allProductsList ul button:hover:not([disabled]),
+.allProductsList ul button:focus,
+.favItems ul button:hover:not([disabled]),
+.favItems ul button:focus {
+  color: tomato;
+}
+
+.wishlist {
+  margin-top: 50px;
+}
+.wishlist h2 {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 700px) {
@@ -1092,6 +1158,10 @@ img {
         -ms-flex: 1 0 27%;
             flex: 1 0 27%;
   }
+  .productContainer ul li,
+  .favContainer ul li {
+    min-width: 100px;
+  }
   .footerTop {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1121,6 +1191,12 @@ img {
     background-size: contain;
     background-position: center;
     background-position-x: 50%;
+  }
+  .addToCart {
+    max-width: 25%;
+  }
+  .cartContent {
+    display: list-item;
   }
 }
 @media (min-width: 701px) {
