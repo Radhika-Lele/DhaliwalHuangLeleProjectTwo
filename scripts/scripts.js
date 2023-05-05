@@ -14,7 +14,7 @@ const database = getDatabase(app);
 
 // Next, we create a reference to point to our database:
 const inventoryRef = ref(database, '/inventory');
-console.log(inventoryRef);
+// console.log(inventoryRef);
 
 // console.log(inventoryRef);
 
@@ -150,6 +150,7 @@ document.querySelector('.popupImage span').onclick = () => {
 document.querySelector('.popupImage').style.display = 'none';
 }
 
+
 //featured Sale section Image slider
 // document.getElementById('next').onclick = function(){
 //     const widthItem = document.querySelector('.productSlide').offsetWidth;
@@ -282,7 +283,7 @@ function handleAddCartItem(){
     let title = product.querySelector('.productTitle').innerHTML;
     let price = product.querySelector('.productPrice').innerHTML;
     let imgSrc = product.querySelector('.productImg').src;
-    console.log(title, price, imgSrc);
+    // console.log(title, price, imgSrc);
 
     let newToAdd = {
         title,
@@ -347,8 +348,7 @@ function updateTotal() {
     cartBoxes.forEach((cartBox) => {
        let priceElement = cartBox.querySelector('.cartPrice');
        let price = parseFloat(priceElement.innerHTML.replace('$', ''));
-       let quantity = parseInt(
-       cartBox.querySelector('.cartQuantity').value);
+       let quantity = parseInt(cartBox.querySelector('.cartQuantity').value);
        total += price * quantity;
        total_qty += quantity;
     });
